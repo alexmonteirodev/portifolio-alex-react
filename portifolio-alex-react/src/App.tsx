@@ -4,7 +4,12 @@ function App() {
       <div className="flex flex-col items-center justify-center gap-3 px-96">
         {/* section 1 - apresentation */}
         <section className="flex flex-col gap-3 mt-20">
-          <h1 className="font-bold text-3xl">Hey, I'm Alex.</h1>
+          <div>
+            <span>
+              <img className="h-5 w-5" src="../assets/imgs/avatar.png" alt="" />
+            </span>
+            <h1 className="font-bold text-3xl">Hey, I'm Alex.</h1>
+          </div>
           <p className="font-sans text-2xl text-gray-800 font-light leading-10 not-italic">
             I’m a 27 year old Mobile Developer with experience in frontend
             development for iOS applications and backend integration using
@@ -17,7 +22,7 @@ function App() {
             I can contribute, learn, and help build meaningful digital products.
           </p>
           <span className="bg-black px-8 py-4 rounded-xl flex items-center justify-center self-start">
-            <a href="#" className="italic text-2xl text-white">
+            <a href="#" className="text-2xl text-white">
               Say Hello!
             </a>
           </span>
