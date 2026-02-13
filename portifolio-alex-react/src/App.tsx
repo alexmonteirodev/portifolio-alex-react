@@ -18,9 +18,9 @@ import LinkCase from "./components/linkCase";
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 pb-20 max-w-6xl mx-auto">
+      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 max-w-6xl mx-auto">
         {/* section 1 - apresentation */}
-        <section className="flex flex-col gap-4 h-screen justify-center">
+        <section className="flex flex-col gap-4 h-[88vh] pt-10 justify-center">
           <div className="flex flex-row gap-3 items-center ">
             <ImgCircle img={avatar} alt="Avatar" size="large" />
 
@@ -52,11 +52,65 @@ function App() {
           </a>
         </section>
 
+        <section className="flex flex-col gap-4 w-full pb-18">
+          <p className="text-gray-400 text-sm">Tools & Stacks</p>
+          <div className="relative overflow-hidden w-full py-2 bg-gray-100/60">
+            {/* Fade esquerdo */}
+            <div className="absolute left-0 top-0 bottom-0 w-16 bg-linear-to-r from-white to-transparent z-10 pointer-events-none"></div>
+
+            {/* Fade direito */}
+            <div className="absolute right-0 top-0 bottom-0 w-16 bg-linear-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+            <div className="inline-block whitespace-nowrap animate-marquee">
+              <span className="mx-4">Html</span>
+              <span className="mx-4">Css</span>
+              <span className="mx-4">JavaScript</span>
+              <span className="mx-4">TypeScript</span>
+              <span className="mx-4">React</span>
+              <span className="mx-4">React Native</span>
+              <span className="mx-4">Next.js</span>
+              <span className="mx-4">Tailwind</span>
+              <span className="mx-4">Nativewind</span>
+              <span className="mx-4">Supabase</span>
+              <span className="mx-4">Vite</span>
+              <span className="mx-4">Git</span>
+              {/* duplicado */}
+              <span className="mx-4">Html</span>
+              <span className="mx-4">Css</span>
+              <span className="mx-4">JavaScript</span>
+              <span className="mx-4">TypeScript</span>
+              <span className="mx-4">React</span>
+              <span className="mx-4">React Native</span>
+              <span className="mx-4">Next.js</span>
+              <span className="mx-4">Tailwind</span>
+              <span className="mx-4">Nativewind</span>
+              <span className="mx-4">Supabase</span>
+              <span className="mx-4">Vite</span>
+              <span className="mx-4">Git</span>
+            </div>
+          </div>
+          <LinkCase
+            title={"Linkedin"}
+            link={"https://www.linkedin.com/in/alexmonteiro-dev/"}
+            text={"Check my last updates on"}
+          />
+          <LinkCase
+            title={"GitHub"}
+            link={"https://www.linkedin.com/in/alexmonteiro-dev/"}
+            text={"The greener the better"}
+          />
+          <LinkCase
+            title={"@odevgringo"}
+            link={
+              "https://www.instagram.com/odevgringo?igsh=MXNwZTh6ajBldXcxNQ%3D%3D&utm_source=qr"
+            }
+            text={"You can see more about me on my instagram"}
+          />
+        </section>
+
         {/* section 1 - Mova */}
         <section className="flex flex-col gap-4">
-          <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
-            <AppTitle img={movaIcon} alt="mimoIcon" name={"Mova"} link={"#"} />
-          </div>
+          <AppTitle img={movaIcon} alt="mimoIcon" name={"Mova"} link={"#"} />
 
           <div className="flex flex-row gap-2">
             <p className="text-gray-400 text-xs font-mono">2026 -</p>
@@ -101,9 +155,7 @@ function App() {
 
         {/* section 2 - mimo */}
         <section className="flex flex-col gap-4">
-          <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
-            <AppTitle img={mimoIcon} alt="mimoIcon" name={"Mimo"} link={"#"} />
-          </div>
+          <AppTitle img={mimoIcon} alt="mimoIcon" name={"Mimo"} link={"#"} />
 
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
 
@@ -147,14 +199,7 @@ function App() {
 
         {/* section 3 - lumio */}
         <section className="flex flex-col gap-4">
-          <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
-            <AppTitle
-              img={lumioIcon}
-              alt="lumioIcon"
-              name={"Lumio"}
-              link={"#"}
-            />
-          </div>
+          <AppTitle img={lumioIcon} alt="lumioIcon" name={"Lumio"} link={"#"} />
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
 
           <div className="flex flex-row gap-2">
@@ -198,14 +243,12 @@ function App() {
 
         {/* section 4 - spinUp */}
         <section className="flex flex-col gap-4">
-          <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
-            <AppTitle
-              img={spinupIcon}
-              alt="lumioIcon"
-              name={"SpinUp"}
-              link={"https://lnkd.in/eY6Htd9K"}
-            />
-          </div>
+          <AppTitle
+            img={spinupIcon}
+            alt="lumioIcon"
+            name={"SpinUp"}
+            link={"https://gp-schedule.vercel.app"}
+          />
           <p className="text-gray-400 text-xs font-mono">2023 - 2024</p>
 
           <div className="flex flex-row gap-2">
@@ -256,6 +299,7 @@ function App() {
           </div>
           <LinkCase />
         </section>
+        <p className="text-gray-400 text-sm pb-5">Last updated: Feb 13, 2026</p>
       </div>
     </>
   );
