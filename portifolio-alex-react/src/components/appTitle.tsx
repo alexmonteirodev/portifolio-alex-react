@@ -12,7 +12,7 @@ const AppTitle = ({
   link: string;
 }) => {
   return (
-    <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100 ">
+    <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
       <div className="flex flex-row gap-2 items-center ">
         <img
           className="rounded-xl h-10 w-10 border border-gray-200"

@@ -18,7 +18,7 @@ import LinkCase from "./components/linkCase";
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 max-w-6xl mx-auto">
+      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 max-w-6xl mx-auto bg-white">
         {/* section 1 - apresentation */}
         <section className="flex flex-col gap-4 h-[88vh] pt-10 justify-center">
           <div className="flex flex-row gap-3 items-center ">
