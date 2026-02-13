@@ -1,6 +1,8 @@
 import avatar from "./assets/imgs/landers/avatar.png";
 import mimoIcon from "./assets/svg/mimo-icon.svg";
 import lumioIcon from "./assets/svg/lumio-icon.svg";
+import movaIcon from "./assets/svg/mova-icon.svg";
+import spinupIcon from "./assets/svg/app-dev-icon.svg";
 import AppTitle from "./components/appTitle";
 import ImgCircle from "./components/imgCircle";
 import natalia from "./assets/imgs/landers/natalia.png";
@@ -11,19 +13,22 @@ import mimoFirstPageApple from "./assets/imgs/mimo/firstScreen.png";
 import mimoSecondPageApple from "./assets/imgs/mimo/secondScreen.png";
 import lumioFirstPageApple from "./assets/imgs/lumio/firstScreen.png";
 import lumioSecondPageApple from "./assets/imgs/lumio/secondScreen.png";
+import LinkCase from "./components/linkCase";
 
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center gap-20 px-96">
+      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 pb-20 max-w-6xl mx-auto">
         {/* section 1 - apresentation */}
         <section className="flex flex-col gap-4 h-screen justify-center">
           <div className="flex flex-row gap-3 items-center ">
             <ImgCircle img={avatar} alt="Avatar" size="large" />
 
-            <h1 className="font-bold text-3xl">Hey, I'm Alex. 🌱</h1>
+            <h1 className="font-bold text-2xl md:text-3xl">
+              Hey, I'm Alex. 🌱
+            </h1>
           </div>
-          <div className="flex flex-col gap-4 font-sans text-2xl text-gray-800 font-light leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans text-lg md:text-2xl leading-8 md:leading-10 text-gray-800 font-light  not-italic">
             <p>
               I’m Mobile & Web Developer with experience in frontend development
               for iOS applications and backend integration using Supabase and
@@ -49,8 +54,8 @@ function App() {
 
         {/* section 1 - Mova */}
         <section className="flex flex-col gap-4">
-          <div className="sticky top-0 z-20 py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
-            <AppTitle img={mimoIcon} alt="mimoIcon" name={"Mova"} link={"#"} />
+          <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
+            <AppTitle img={movaIcon} alt="mimoIcon" name={"Mova"} link={"#"} />
           </div>
 
           <div className="flex flex-row gap-2">
@@ -65,12 +70,11 @@ function App() {
             <ImgCircle img={dhiego} alt="Avatar" size="small" />
           </div>
 
-          <div className="flex flex-col gap-4 font-sans text-2xl text-gray-800 font-light leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
-              Mimo is a social app focused on birthdays and gift planning. Users
-              create personal profiles including preferences such as clothing
-              size, shoe size, favorite colors, and music style making gift
-              selection easier and more thoughtful.
+              We’re building something designed to reshape how people manage
+              performance, structure routines, and connect within the fitness
+              ecosystem. <br /> Mova is coming...
             </p>
             {/* <p>
               The app includes birthday reminders to prevent missed dates and a
@@ -97,7 +101,7 @@ function App() {
 
         {/* section 2 - mimo */}
         <section className="flex flex-col gap-4">
-          <div className="sticky top-0 z-20 py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
+          <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
             <AppTitle img={mimoIcon} alt="mimoIcon" name={"Mimo"} link={"#"} />
           </div>
 
@@ -110,7 +114,7 @@ function App() {
             <ImgCircle img={dhiego} alt="Avatar" size="small" />
           </div>
 
-          <div className="flex flex-col gap-4 font-sans text-2xl text-gray-800 font-light leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
               Mimo is a social app focused on birthdays and gift planning. Users
               create personal profiles including preferences such as clothing
@@ -123,7 +127,7 @@ function App() {
               receive, similar to a social feed.
             </p>
             <img
-              className="rounded-xl"
+              className="rounded-xl w-full max-w-2xl"
               src={mimoFirstPageApple}
               alt={"mimoImgs"}
             />
@@ -133,16 +137,17 @@ function App() {
               organization.
             </p>
             <img
-              className="rounded-xl"
+              className="rounded-xl w-full max-w-2xl"
               src={mimoSecondPageApple}
               alt={"mimoImgs"}
             />
           </div>
+          <LinkCase />
         </section>
 
         {/* section 3 - lumio */}
         <section className="flex flex-col gap-4">
-          <div className="sticky top-0 z-20 py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
+          <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
             <AppTitle
               img={lumioIcon}
               alt="lumioIcon"
@@ -159,7 +164,7 @@ function App() {
             <ImgCircle img={dhiego} alt="Avatar" size="small" />
           </div>
 
-          <div className="flex flex-col gap-4 font-sans text-2xl text-gray-800 font-light leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
               Lumio is a daily devotional app designed to help users connect
               with God through their emotions. By selecting their current mood,
@@ -182,18 +187,20 @@ function App() {
               experience.
             </p>
             <img
-              className="rounded-xl"
+              className="rounded-xl w-full max-w-2xl"
               src={lumioSecondPageApple}
               alt={"mimoImgs"}
             />
           </div>
+
+          <LinkCase />
         </section>
 
         {/* section 4 - spinUp */}
         <section className="flex flex-col gap-4">
-          <div className="sticky top-0 z-20 py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
+          <div className="sticky top-0 z-20 py-3 md:py-4 bg-white/70 backdrop-blur-md border-b border-gray-100">
             <AppTitle
-              img={lumioIcon}
+              img={spinupIcon}
               alt="lumioIcon"
               name={"SpinUp"}
               link={"https://lnkd.in/eY6Htd9K"}
@@ -205,7 +212,7 @@ function App() {
             <ImgCircle img={alex} alt="Avatar" size="small" />
           </div>
 
-          <div className="flex flex-col gap-4 font-sans text-2xl text-gray-800 font-light leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
               I've worked on a company who operates with rotating shifts, and I
               noticed that the internal system didn’t provide a clear overview
@@ -228,7 +235,7 @@ function App() {
             </p>
 
             <img
-              className="rounded-xl"
+              className="rounded-xl w-full max-w-2xl"
               src={lumioFirstPageApple}
               alt={"mimoImgs"}
             />
@@ -247,6 +254,7 @@ function App() {
               solutions that create real value and help people.
             </p>
           </div>
+          <LinkCase />
         </section>
       </div>
     </>
