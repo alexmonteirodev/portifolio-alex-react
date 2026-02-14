@@ -178,7 +178,7 @@ function App() {
           </a>
         </section>
 
-        <section className="flex flex-col gap-4 w-full pb-18">
+        <section className="flex flex-col gap-4 w-full">
           <p className="text-gray-400 text-sm">Tools & Stacks</p>
           <div className="relative overflow-hidden w-full py-2 bg-gray-100/60">
             {/* Fade esquerdo */}
