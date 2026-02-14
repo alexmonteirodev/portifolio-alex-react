@@ -14,6 +14,132 @@ import mimoSecondPageApple from "./assets/imgs/mimo/secondScreen.png";
 import lumioFirstPageApple from "./assets/imgs/lumio/firstScreen.png";
 import lumioSecondPageApple from "./assets/imgs/lumio/secondScreen.png";
 import LinkCase from "./components/linkCase";
+import Stack from "./components/stack";
+import htmlIcon from "./assets/svg/stacks/html5.svg";
+import cssIcon from "./assets/svg/stacks/css3.svg";
+import jsIcon from "./assets/svg/stacks/javascript.svg";
+import tsIcon from "./assets/svg/stacks/typescript.svg";
+import reactIcon from "./assets/svg/stacks/react.svg";
+import nextIcon from "./assets/svg/stacks/nextjs.svg";
+import tailwindIcon from "./assets/svg/stacks/tailwindcss.svg";
+import supabaseIcon from "./assets/svg/stacks/supabase.svg";
+import gitIcon from "./assets/svg/stacks/git.svg";
+import expoIcon from "./assets/svg/stacks/expo.svg";
+import viteIcon from "./assets/svg/stacks/vitejs.svg";
+// import githubIcon from "./assets/svg/github.svg";
+// import linkedinIcon from "./assets/svg/linkedin.svg";
+// import instagramIcon from "./assets/svg/instagram.svg";
+
+const stacks = [
+  {
+    img: htmlIcon,
+    title: "Html",
+  },
+  {
+    img: cssIcon,
+    title: "Css",
+  },
+  {
+    img: jsIcon,
+    title: "JavaScript",
+  },
+  {
+    img: tsIcon,
+    title: "TypeScript",
+  },
+  {
+    img: reactIcon,
+    title: "React",
+  },
+  {
+    img: reactIcon,
+    title: "React Native",
+  },
+  {
+    img: nextIcon,
+    title: "Next.js",
+  },
+  {
+    img: tailwindIcon,
+    title: "Tailwind",
+  },
+  {
+    img: tailwindIcon,
+    title: "Nativewind",
+  },
+  {
+    img: supabaseIcon,
+    title: "Supabase",
+  },
+
+  {
+    img: gitIcon,
+    title: "Git",
+  },
+  {
+    img: expoIcon,
+    title: "Expo",
+  },
+  {
+    img: viteIcon,
+    title: "Vite",
+  },
+  // duplicado
+
+  {
+    img: htmlIcon,
+    title: "Html",
+  },
+  {
+    img: cssIcon,
+    title: "Css",
+  },
+  {
+    img: jsIcon,
+    title: "JavaScript",
+  },
+  {
+    img: tsIcon,
+    title: "TypeScript",
+  },
+  {
+    img: reactIcon,
+    title: "React",
+  },
+  {
+    img: reactIcon,
+    title: "React Native",
+  },
+  {
+    img: nextIcon,
+    title: "Next.js",
+  },
+  {
+    img: tailwindIcon,
+    title: "Tailwind",
+  },
+  {
+    img: tailwindIcon,
+    title: "Nativewind",
+  },
+  {
+    img: supabaseIcon,
+    title: "Supabase",
+  },
+
+  {
+    img: gitIcon,
+    title: "Git",
+  },
+  {
+    img: expoIcon,
+    title: "Expo",
+  },
+  {
+    img: viteIcon,
+    title: "Vite",
+  },
+];
 
 function App() {
   return (
@@ -61,43 +187,26 @@ function App() {
             {/* Fade direito */}
             <div className="absolute right-0 top-0 bottom-0 w-16 bg-linear-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-            <div className="inline-block whitespace-nowrap animate-marquee">
-              <span className="mx-4">Html</span>
-              <span className="mx-4">Css</span>
-              <span className="mx-4">JavaScript</span>
-              <span className="mx-4">TypeScript</span>
-              <span className="mx-4">React</span>
-              <span className="mx-4">React Native</span>
-              <span className="mx-4">Next.js</span>
-              <span className="mx-4">Tailwind</span>
-              <span className="mx-4">Nativewind</span>
-              <span className="mx-4">Supabase</span>
-              <span className="mx-4">Vite</span>
-              <span className="mx-4">Git</span>
-              {/* duplicado */}
-              <span className="mx-4">Html</span>
-              <span className="mx-4">Css</span>
-              <span className="mx-4">JavaScript</span>
-              <span className="mx-4">TypeScript</span>
-              <span className="mx-4">React</span>
-              <span className="mx-4">React Native</span>
-              <span className="mx-4">Next.js</span>
-              <span className="mx-4">Tailwind</span>
-              <span className="mx-4">Nativewind</span>
-              <span className="mx-4">Supabase</span>
-              <span className="mx-4">Vite</span>
-              <span className="mx-4">Git</span>
+            <div className="inline-block whitespace-nowrap animate-marquee py-2">
+              {stacks.map((stack, i) => (
+                <div>
+                  <Stack key={i} img={stack.img} title={stack.title} />
+                </div>
+              ))}
             </div>
           </div>
           <LinkCase
             title={"Linkedin"}
             link={"https://www.linkedin.com/in/alexmonteiro-dev/"}
             text={"Check my last updates on"}
+            // img={linkedinIcon}
+            // bg={true}
           />
           <LinkCase
             title={"GitHub"}
             link={"https://www.linkedin.com/in/alexmonteiro-dev/"}
             text={"The greener the better"}
+            // img={githubIcon}
           />
           <LinkCase
             title={"@odevgringo"}
@@ -105,6 +214,7 @@ function App() {
               "https://www.instagram.com/odevgringo?igsh=MXNwZTh6ajBldXcxNQ%3D%3D&utm_source=qr"
             }
             text={"You can see more about me on my instagram"}
+            // img={instagramIcon}
           />
         </section>
 
