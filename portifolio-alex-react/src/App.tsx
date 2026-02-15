@@ -26,6 +26,7 @@ import supabaseIcon from "./assets/svg/stacks/supabase.svg";
 import gitIcon from "./assets/svg/stacks/git.svg";
 import expoIcon from "./assets/svg/stacks/expo.svg";
 import viteIcon from "./assets/svg/stacks/vitejs.svg";
+import wppIcon from "./assets/svg/wpp-icon.svg";
 // import githubIcon from "./assets/svg/github.svg";
 // import linkedinIcon from "./assets/svg/linkedin.svg";
 // import instagramIcon from "./assets/svg/instagram.svg";
@@ -172,8 +173,9 @@ function App() {
           </div>
           <a
             href="https://api.whatsapp.com/send/?phone=34680436647&text&type=phone_number&app_absent=0"
-            className="mt-4 text-xl text-white bg-black px-6 py-3 rounded-xl flex items-center justify-center self-start cursor-pointer hover:scale-105 hover:opacity-80 transition"
+            className="mt-4 text-xl text-white bg-black px-6 py-3 rounded-xl flex items-center justify-center self-start cursor-pointer hover:scale-105 hover:opacity-80 transition gap-2"
           >
+            <img className="h-8 w-8 " src={wppIcon} alt={""} />
             Say Hello!
           </a>
         </section>
