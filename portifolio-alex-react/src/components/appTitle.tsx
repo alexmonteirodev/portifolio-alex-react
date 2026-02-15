@@ -22,10 +22,10 @@ const AppTitle = ({
           />
           <p className="text-2xl font-bold ">{name}</p>
         </div>
-        <div className="flex flex-row items-center  gap-2 text-gray-500 border-2 border-gray-400 bg-gray-100 px-3 py-2 rounded-full scale-75 cursor-pointer hover:opacity-80 hover:text-black hover:border-gray-500  group ">
+        <div className="flex flex-row items-center  gap-2 text-gray-500 border border-gray-200 bg-gray-100 px-3 py-2 rounded-full scale-90 md:scale-75 cursor-pointer hover:opacity-80 hover:text-black hover:border-gray-400  group ">
           <a href={link}>Check out</a>
           <img
-            className="rounded-xl h-5 w-5 border border-gray-300 opacity-50 transition-transform duration-300 group-hover:rotate-45 text-gray-400 group-hover:opacity-100"
+            className="rounded-xl h-5 w-5 border border-gray-300 opacity-60 transition-transform duration-300 group-hover:rotate-45 text-gray-400 group-hover:opacity-100"
             src={arrowIcon}
             alt={alt}
           />

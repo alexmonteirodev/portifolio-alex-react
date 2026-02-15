@@ -145,7 +145,7 @@ const stacks = [
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 max-w-6xl mx-auto bg-white">
+      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 max-w-6xl mx-auto bg-white pt-[env(safe-area-inset-top)]">
         {/* section 1 - apresentation */}
         <section className="flex flex-col gap-4 h-[88vh] pt-10 justify-center">
           <div className="flex flex-row gap-3 items-center ">
@@ -189,12 +189,12 @@ function App() {
             {/* Fade direito */}
             <div className="absolute right-0 top-0 bottom-0 w-16 bg-linear-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-            <div className="inline-block whitespace-nowrap animate-marquee py-2">
-              {stacks.map((stack, i) => (
-                <div>
+            <div className="overflow-hidden w-full py-2 bg-gray-100/60 relative">
+              <div className="flex w-max animate-marquee">
+                {[...stacks, ...stacks].map((stack, i) => (
                   <Stack key={i} img={stack.img} title={stack.title} />
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
           <LinkCase
@@ -206,7 +206,7 @@ function App() {
           />
           <LinkCase
             title={"GitHub"}
-            link={"https://www.linkedin.com/in/alexmonteiro-dev/"}
+            link={"https://github.com/alexmonteirodev"}
             text={"The greener the better"}
             // img={githubIcon}
           />
