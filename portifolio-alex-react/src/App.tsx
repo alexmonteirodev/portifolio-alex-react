@@ -311,7 +311,14 @@ function App() {
 
         {/* section 3 - lumio */}
         <section className="flex flex-col gap-4">
-          <AppTitle img={lumioIcon} alt="lumioIcon" name={"Lumio"} link={"#"} />
+          <AppTitle
+            img={lumioIcon}
+            alt="lumioIcon"
+            name={"Lumio"}
+            link={
+              "https://apps.apple.com/us/app/lumio-bible-devotionals/id6755790168"
+            }
+          />
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
 
           <div className="flex flex-row gap-2">
@@ -350,7 +357,7 @@ function App() {
             />
           </div>
 
-          <LinkCase />
+          <LinkCase link="#" />
         </section>
 
         {/* section 4 - spinUp */}

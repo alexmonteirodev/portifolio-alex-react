@@ -28,7 +28,7 @@ const LinkCase = ({
         <p className="text-gray-400 text-sm">{text ? text : "Find out more"}</p>
         <a
           href={link}
-          className="text-lg md:text-xl inline-flex items-center gap-3 cursor-pointer group border border-transparent hover:border-b-gray-200 self-start"
+          className="text-lg md:text-xl inline-flex items-center gap-3 cursor-pointer group border border-transparent hover:border-b-gray-200 self-star"
         >
           {title ? title : "View Case Study"}
           <img
