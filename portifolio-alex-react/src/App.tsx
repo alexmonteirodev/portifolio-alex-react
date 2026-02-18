@@ -1,4 +1,4 @@
-import avatar from "./assets/imgs/landers/avatar.png";
+// import avatar from "./assets/imgs/landers/avatar.png";
 import mimoIcon from "./assets/svg/mimo-icon.svg";
 import lumioIcon from "./assets/svg/lumio-icon.svg";
 import movaIcon from "./assets/svg/mova-icon.svg";
@@ -9,10 +9,12 @@ import natalia from "./assets/imgs/landers/natalia.png";
 import alex from "./assets/imgs/landers/alex.png";
 import laura from "./assets/imgs/landers/laura.png";
 import dhiego from "./assets/imgs/landers/dhiego.png";
+import avatar from "./assets/imgs/perfilImgCv.jpg";
 import mimoFirstPageApple from "./assets/imgs/mimo/firstScreen.png";
 import mimoSecondPageApple from "./assets/imgs/mimo/secondScreen.png";
 import lumioFirstPageApple from "./assets/imgs/lumio/firstScreen.png";
 import lumioSecondPageApple from "./assets/imgs/lumio/secondScreen.png";
+import spinUpImg from "./assets/imgs/spinup/spinup-schedule-gps.jpg";
 import LinkCase from "./components/linkCase";
 import Stack from "./components/stack";
 import htmlIcon from "./assets/svg/stacks/html5.svg";
@@ -398,7 +400,7 @@ function App() {
 
             <img
               className="rounded-xl w-full max-w-2xl"
-              src={lumioFirstPageApple}
+              src={spinUpImg}
               alt={"mimoImgs"}
             />
 
