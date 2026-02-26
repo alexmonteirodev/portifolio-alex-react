@@ -151,27 +151,35 @@ function App() {
         {/* section 1 - apresentation */}
         <section className="flex flex-col gap-4 h-[88vh] pt-10 justify-center">
           <div className="flex flex-row gap-3 items-center ">
-            <ImgCircle img={avatar} alt="Avatar" size="large" />
+            <div className="relative">
+              <ImgCircle img={avatar} alt="Avatar" size="large" />
+              <div className="h-3 w-3 bg-green-500 absolute bottom-0.5 right-2 rounded-full border-2 border-white"></div>
+            </div>
 
-            <h1 className="font-bold text-2xl md:text-3xl">
-              Hey, I'm Alex. 🌱
-            </h1>
+            <div>
+              <h1 className="font-bold text-2xl md:text-3xl">
+                Hey, I'm Alex. 🌱
+              </h1>
+              <p className="text-gray-400 text-sm pt-1 pl-0.5">Madrid, Spain</p>
+            </div>
           </div>
           <div className="flex flex-col gap-4 font-sans text-lg md:text-2xl leading-8 md:leading-10 text-gray-800 font-light  not-italic">
             <p>
-              I’m Mobile & Web Developer with experience in frontend development
-              for iOS applications and backend integration using Supabase and
-              SQL.
+              I’m a Mobile Developer with a strong focus on software
+              architecture and system design, building applications from concept
+              to production.
             </p>
             <p>
-              I build structured, scalable solutions across interface and data
-              layers, with a strong interest in software architecture and system
-              design.
+              I contribute across the full product lifecycle — from early-stage
+              ideation and product validation to defining technical
+              architecture, designing data models, and implementing
+              well-structured features.
             </p>
-            <p>
-              Always open to collaborating with teams where I can contribute,
-              learn, and help build meaningful digital products.
-            </p>
+            {/* <p>
+              With a strong interest in software architecture and system design,
+              I focus on creating scalable, maintainable systems that balance
+              product vision with technical excellence.
+            </p> */}
           </div>
           <a
             href="https://api.whatsapp.com/send/?phone=34680436647&text&type=phone_number&app_absent=0"
@@ -191,7 +199,7 @@ function App() {
             {/* Fade direito */}
             <div className="absolute right-0 top-0 bottom-0 w-16 bg-linear-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-            <div className="overflow-hidden w-full py-2 bg-gray-100/60 relative">
+            <div className="overflow-hidden w-full py-2 relative">
               <div className="flex w-max animate-marquee">
                 {[...stacks, ...stacks].map((stack, i) => (
                   <Stack key={i} img={stack.img} title={stack.title} />
@@ -224,7 +232,14 @@ function App() {
 
         {/* section 1 - Mova */}
         <section className="flex flex-col gap-4">
-          <AppTitle img={movaIcon} alt="mimoIcon" name={"Mova"} link={"#"} />
+          <AppTitle
+            img={movaIcon}
+            alt="mimoIcon"
+            name={"Mova"}
+            link={
+              "https://www.instagram.com/movaclub.br?igsh=MWkzNTN3YnRra2xvdA=="
+            }
+          />
 
           <div className="flex flex-row gap-2">
             <p className="text-gray-400 text-xs font-mono">2026 -</p>
