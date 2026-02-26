@@ -374,7 +374,7 @@ function App() {
             />
           </div>
 
-          <LinkCase link="#" />
+          <LinkCase link="https://apps.apple.com/us/app/lumio-bible-devotionals/id6755790168" />
         </section>
 
         {/* section 4 - spinUp */}
@@ -433,7 +433,7 @@ function App() {
               solutions that create real value and help people.
             </p>
           </div>
-          <LinkCase />
+          <LinkCase link="https://gp-schedule.vercel.app" />
         </section>
         <p className="text-gray-400 text-sm pb-5">Last updated: Feb 13, 2026</p>
       </div>
