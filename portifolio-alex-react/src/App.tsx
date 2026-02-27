@@ -308,7 +308,7 @@ function App() {
               receive, similar to a social feed.
             </p>
             <img
-              className="rounded-xl w-full max-w-2xl"
+              className="rounded-xs w-full max-w-2xl"
               src={mimoFirstPageApple}
               alt={"mimoImgs"}
             />
@@ -318,12 +318,12 @@ function App() {
               organization.
             </p>
             <img
-              className="rounded-xl w-full max-w-2xl"
+              className="rounded-xs w-full max-w-2xl"
               src={mimoSecondPageApple}
               alt={"mimoImgs"}
             />
           </div>
-          <LinkCase />
+          {/* <LinkCase /> */}
         </section>
 
         {/* section 3 - lumio */}
@@ -353,7 +353,7 @@ function App() {
               with how they feel, creating a bridge between emotions and faith.
             </p>
             <img
-              className="rounded-xl"
+              className="rounded-xs"
               src={lumioFirstPageApple}
               alt={"mimoImgs"}
             />
@@ -368,13 +368,13 @@ function App() {
               experience.
             </p>
             <img
-              className="rounded-xl w-full max-w-2xl"
+              className="rounded-xs w-full max-w-2xl"
               src={lumioSecondPageApple}
               alt={"mimoImgs"}
             />
           </div>
 
-          <LinkCase link="https://apps.apple.com/us/app/lumio-bible-devotionals/id6755790168" />
+          {/* <LinkCase link="https://apps.apple.com/us/app/lumio-bible-devotionals/id6755790168" /> */}
         </section>
 
         {/* section 4 - spinUp */}
@@ -414,7 +414,7 @@ function App() {
             </p>
 
             <img
-              className="rounded-xl w-full max-w-2xl"
+              className="rounded-xs w-full max-w-2xl"
               src={spinUpImg}
               alt={"mimoImgs"}
             />
@@ -433,7 +433,7 @@ function App() {
               solutions that create real value and help people.
             </p>
           </div>
-          <LinkCase link="https://gp-schedule.vercel.app" />
+          {/* <LinkCase link="https://gp-schedule.vercel.app" /> */}
         </section>
         <p className="text-gray-400 text-sm pb-5">Last updated: Feb 13, 2026</p>
       </div>
