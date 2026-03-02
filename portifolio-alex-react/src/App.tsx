@@ -1,4 +1,9 @@
 // import avatar from "./assets/imgs/landers/avatar.png";
+// import mimoFirstPageApple from "./assets/imgs/mimo/firstScreen.png";
+// import mimoSecondPageApple from "./assets/imgs/mimo/secondScreen.png";
+// import lumioFirstPageApple from "./assets/imgs/lumio/firstScreen.png";
+// import lumioSecondPageApple from "./assets/imgs/lumio/secondScreen.png";
+// import spinUpImg from "./assets/imgs/spinup/spinup-schedule-gps.jpg";
 import mimoIcon from "./assets/svg/mimo-icon.svg";
 import lumioIcon from "./assets/svg/lumio-icon.svg";
 import movaIcon from "./assets/svg/mova-icon.svg";
@@ -10,11 +15,6 @@ import alex from "./assets/imgs/landers/alex.png";
 import laura from "./assets/imgs/landers/laura.png";
 import dhiego from "./assets/imgs/landers/dhiego.png";
 import avatar from "./assets/imgs/perfilImgCv.jpg";
-import mimoFirstPageApple from "./assets/imgs/mimo/firstScreen.png";
-import mimoSecondPageApple from "./assets/imgs/mimo/secondScreen.png";
-import lumioFirstPageApple from "./assets/imgs/lumio/firstScreen.png";
-import lumioSecondPageApple from "./assets/imgs/lumio/secondScreen.png";
-import spinUpImg from "./assets/imgs/spinup/spinup-schedule-gps.jpg";
 import LinkCase from "./components/linkCase";
 import Stack from "./components/stack";
 import htmlIcon from "./assets/svg/stacks/html5.svg";
@@ -29,6 +29,23 @@ import gitIcon from "./assets/svg/stacks/git.svg";
 import expoIcon from "./assets/svg/stacks/expo.svg";
 import viteIcon from "./assets/svg/stacks/vitejs.svg";
 import wppIcon from "./assets/svg/wpp-icon.svg";
+import MockupGroup from "./components/MockupGroup";
+import mimo1 from "./assets/imgs/mimo/mimo1.png";
+import mimo2 from "./assets/imgs/mimo/mimo2.png";
+import mimo3 from "./assets/imgs/mimo/mimo3.png";
+import mimo4 from "./assets/imgs/mimo/mimo4.png";
+import mimo5 from "./assets/imgs/mimo/mimo5.png";
+import mimo6 from "./assets/imgs/mimo/mimo6.png";
+import lumio1 from "./assets/imgs/lumio/lumio1.png";
+import lumio2 from "./assets/imgs/lumio/lumio2.png";
+import lumio3 from "./assets/imgs/lumio/lumio3.png";
+import lumio4 from "./assets/imgs/lumio/lumio4.png";
+import lumio5 from "./assets/imgs/lumio/lumio5.png";
+import lumio6 from "./assets/imgs/lumio/lumio6.png";
+import spinup1 from "./assets/imgs/spinup/spinup1.png";
+import spinup2 from "./assets/imgs/spinup/spinup2.png";
+import spinup3 from "./assets/imgs/spinup/spinup3.png";
+
 // import githubIcon from "./assets/svg/github.svg";
 // import linkedinIcon from "./assets/svg/linkedin.svg";
 // import instagramIcon from "./assets/svg/instagram.svg";
@@ -239,6 +256,7 @@ function App() {
             link={
               "https://www.instagram.com/movaclub.br?igsh=MWkzNTN3YnRra2xvdA=="
             }
+            showLink={false}
           />
 
           <div className="flex flex-row gap-2">
@@ -302,26 +320,28 @@ function App() {
               size, shoe size, favorite colors, and music style making gift
               selection easier and more thoughtful.
             </p>
+            <MockupGroup img1={mimo1} img2={mimo2} img3={mimo3} />
+            {/* <img
+              className="rounded-xs w-full max-w-2xl"
+              src={mimoFirstPageApple}
+              alt={"mimoImgs"}
+            /> */}
             <p>
               The app includes birthday reminders to prevent missed dates and a
               post system where users can share gift ideas they would like to
               receive, similar to a social feed.
             </p>
-            <img
-              className="rounded-xs w-full max-w-2xl"
-              src={mimoFirstPageApple}
-              alt={"mimoImgs"}
-            />
             <p>
               Mimo blends social interaction with practical utility, improving
               the gift-giving experience through personalization and
               organization.
             </p>
-            <img
+            <MockupGroup img1={mimo4} img2={mimo5} img3={mimo6} />
+            {/* <img
               className="rounded-xs w-full max-w-2xl"
               src={mimoSecondPageApple}
               alt={"mimoImgs"}
-            />
+            /> */}
           </div>
           {/* <LinkCase /> */}
         </section>
@@ -352,11 +372,12 @@ function App() {
               users receive personalized Bible verses and chapters that resonate
               with how they feel, creating a bridge between emotions and faith.
             </p>
-            <img
+            <MockupGroup img1={lumio1} img2={lumio2} img3={lumio3} />
+            {/* <img
               className="rounded-xs"
               src={lumioFirstPageApple}
               alt={"mimoImgs"}
-            />
+            /> */}
             <p>
               The app also allows users to write personal reflections, track
               their devotional history, and maintain consistency through a
@@ -367,11 +388,13 @@ function App() {
               mechanics to create a meaningful and consistent spiritual
               experience.
             </p>
-            <img
+            <MockupGroup img1={lumio4} img2={lumio5} img3={lumio6} />
+
+            {/* <img
               className="rounded-xs w-full max-w-2xl"
               src={lumioSecondPageApple}
               alt={"mimoImgs"}
-            />
+            /> */}
           </div>
 
           {/* <LinkCase link="https://apps.apple.com/us/app/lumio-bible-devotionals/id6755790168" /> */}
@@ -406,18 +429,19 @@ function App() {
               solution that could improve daily workflows.
             </p>
 
+            <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} />
+            {/* <img
+              className="rounded-xs w-full max-w-2xl"
+              src={spinUpImg}
+              alt={"mimoImgs"}
+            /> */}
+
             <p>
               That’s how SpinUp was born a web mobile friendly scheduling tool
               focused on clarity, speed, and usability. It allows users to
               quickly add and visualize shifts in a clean calendar interface,
               making coordination simpler and more efficient.
             </p>
-
-            <img
-              className="rounded-xs w-full max-w-2xl"
-              src={spinUpImg}
-              alt={"mimoImgs"}
-            />
 
             <p>
               Going a step further, I implemented a monthly overview of total
