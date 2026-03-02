@@ -10,10 +10,7 @@ import movaIcon from "./assets/svg/mova-icon.svg";
 import spinupIcon from "./assets/svg/app-dev-icon.svg";
 import AppTitle from "./components/appTitle";
 import ImgCircle from "./components/imgCircle";
-import natalia from "./assets/imgs/landers/natalia.png";
 import alex from "./assets/imgs/landers/alex.png";
-import laura from "./assets/imgs/landers/laura.png";
-import dhiego from "./assets/imgs/landers/dhiego.png";
 import avatar from "./assets/imgs/perfilImgCv.jpg";
 import LinkCase from "./components/linkCase";
 import Stack from "./components/stack";
@@ -45,6 +42,7 @@ import lumio6 from "./assets/imgs/lumio/lumio6.png";
 import spinup1 from "./assets/imgs/spinup/spinup1.png";
 import spinup2 from "./assets/imgs/spinup/spinup2.png";
 import spinup3 from "./assets/imgs/spinup/spinup3.png";
+import Landers from "./components/Landers";
 
 // import githubIcon from "./assets/svg/github.svg";
 // import linkedinIcon from "./assets/svg/linkedin.svg";
@@ -264,12 +262,7 @@ function App() {
             <p className="text-green-500 text-xs font-mono">now</p>
           </div>
 
-          <div className="flex flex-row gap-2">
-            <ImgCircle img={laura} alt="Avatar" size="small" />
-            <ImgCircle img={alex} alt="Avatar" size="small" />
-            <ImgCircle img={natalia} alt="Avatar" size="small" />
-            <ImgCircle img={dhiego} alt="Avatar" size="small" />
-          </div>
+          <Landers />
 
           <div className="flex flex-col gap-4 font-sans text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
@@ -306,12 +299,7 @@ function App() {
 
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
 
-          <div className="flex flex-row gap-2">
-            <ImgCircle img={laura} alt="Avatar" size="small" />
-            <ImgCircle img={alex} alt="Avatar" size="small" />
-            <ImgCircle img={natalia} alt="Avatar" size="small" />
-            <ImgCircle img={dhiego} alt="Avatar" size="small" />
-          </div>
+          <Landers />
 
           <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
@@ -358,12 +346,7 @@ function App() {
           />
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
 
-          <div className="flex flex-row gap-2">
-            <ImgCircle img={laura} alt="Avatar" size="small" />
-            <ImgCircle img={alex} alt="Avatar" size="small" />
-            <ImgCircle img={natalia} alt="Avatar" size="small" />
-            <ImgCircle img={dhiego} alt="Avatar" size="small" />
-          </div>
+          <Landers />
 
           <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
