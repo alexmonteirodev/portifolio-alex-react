@@ -3,20 +3,40 @@ const MockupWebGroup = ({
   img2,
   img3,
 }: {
-  img1: string;
-  img2: string;
-  img3: string;
+  img1?: string;
+  img2?: string;
+  img3?: string;
 }) => {
   const alt = "mockup img";
   return (
     <div className="flex flex-row items-center justify-center gap-2">
-      <img
-        className="w-1/3 h-auto rounded-4xl border-2 border-[#B8AFE6]"
-        src={img1}
-        alt={alt}
-      />
-      <img className="w-1/3 h-auto" src={img2} alt={alt} />
-      <img className="w-1/3 h-auto" src={img3} alt={alt} />
+      {img1 ? (
+        <img
+          className="w-1/3 h-auto rounded-4xl border-2 border-[#B8AFE6]"
+          src={img1}
+          alt={alt}
+        />
+      ) : (
+        ""
+      )}
+      {img2 ? (
+        <img
+          className="w-1/3 h-auto rounded-4xl border-2 border-[#B8AFE6]"
+          src={img2}
+          alt={alt}
+        />
+      ) : (
+        ""
+      )}
+      {img3 ? (
+        <img
+          className="w-1/3 h-auto rounded-4xl border-2 border-[#B8AFE6]"
+          src={img3}
+          alt={alt}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 };

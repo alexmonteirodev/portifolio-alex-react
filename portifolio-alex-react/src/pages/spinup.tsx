@@ -8,8 +8,9 @@ import LinkCase from "../components/linkCase";
 import AppTitle from "../components/appTitle";
 import MockupGroup from "../components/MockupGroup";
 import evoscheduleold from "../assets/imgs/spinup/evoscheduleold.jpg";
-
+import evoschedulenew from "../assets/imgs/spinup/evoschedulenew.png";
 import MockupWebGroup from "../components/MockupWebGroup";
+import figmaMpv1 from "../assets/imgs/spinup/figmamvpspinup.png";
 
 export default function SpinUp() {
   return (
@@ -140,11 +141,8 @@ export default function SpinUp() {
               internal app that removed the macro view and color cues, creating
               confusion.
             </p>
-            <MockupWebGroup
-              img1={evoscheduleold}
-              img2={evoscheduleold}
-              img3={evoscheduleold}
-            />
+
+            <MockupWebGroup img1={evoscheduleold} img2={evoschedulenew} />
 
             <h1 className="font-bold text-2xl md:text-3xl">Problem</h1>
             <p>
@@ -166,7 +164,6 @@ export default function SpinUp() {
               <br />• Manual swap validation (hours, shifts, training)
               <br />• Delayed approvals leading to lost opportunities
             </p>
-            <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} />
 
             <h1 className="font-bold text-2xl md:text-3xl">Insight</h1>
             <p>
@@ -210,6 +207,8 @@ export default function SpinUp() {
               <br />
               3. Provide tangible proof to leadership
             </p>
+
+            <img className=" rounded-xl " src={figmaMpv1} alt={"figmaImg"} />
 
             <h1 className="font-bold text-2xl md:text-3xl">
               Technical Decisions
@@ -283,6 +282,8 @@ export default function SpinUp() {
               potential operational improvements.
             </p>
 
+            <img className=" rounded-xl " src={figmaMpv1} alt={"figmaImg"} />
+
             <h1 className="font-bold text-2xl md:text-3xl">
               If Evolved to Production
             </h1>
@@ -335,6 +336,7 @@ export default function SpinUp() {
               The MVP validated usability; production would formalize
               system-level operations.
             </p>
+            <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} />
           </div>
           {/* <h1 className="font-bold text-2xl md:text-3xl">VERSAO EM INGLES</h1>
           <h1 className="font-bold text-2xl md:text-3xl">Context</h1>
