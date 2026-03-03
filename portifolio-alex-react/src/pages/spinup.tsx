@@ -10,7 +10,7 @@ import evoscheduleold from "../assets/imgs/spinup/evoscheduleold.jpg";
 import evoschedulenew from "../assets/imgs/spinup/evoschedulenew.png";
 import MockupWebGroup from "../components/MockupWebGroup";
 import figmaMpv1 from "../assets/imgs/spinup/figmamvpspinup.png";
-import aproved1 from "../assets/imgs/spinup/aproved1.png";
+import aproved0 from "../assets/imgs/spinup/aproved1.png";
 import aproved2 from "../assets/imgs/spinup/aproved2.png";
 import aproved3 from "../assets/imgs/spinup/aproved3.png";
 import LinkBackHome from "../components/LinkBackHome";
@@ -289,7 +289,7 @@ export default function SpinUp() {
               usability and practical value.
             </p>
 
-            <MockupWebGroup img1={aproved1} img2={aproved2} img3={aproved3} />
+            <MockupWebGroup img1={aproved0} img2={aproved2} img3={aproved3} />
 
             <p>
               The initiative successfully demonstrated concept viability and
