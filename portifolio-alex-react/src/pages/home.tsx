@@ -422,7 +422,7 @@ export default function Home() {
               making coordination simpler and more efficient.
             </p>
           </div>
-          <LinkCase link="/spinup" />
+          <LinkCase link="/spinup" route={true} />
         </section>
         <p className="text-gray-400 text-sm pb-5">Last updated: Feb 13, 2026</p>
       </div>
