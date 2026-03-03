@@ -421,20 +421,6 @@ export default function Home() {
               quickly add and visualize shifts in a clean calendar interface,
               making coordination simpler and more efficient.
             </p>
-
-            <p>
-              Going a step further, I implemented a monthly overview of total
-              hours and days worked, helping both employees and managers better
-              understand workload distribution and plan ahead.
-            </p>
-
-            <p>
-              SpinUp was a personal initiative project, and I genuinely have a
-              special appreciation for it. It represents more than just code..
-              it reflects my mindset of identifying inefficiencies,
-              understanding their impact, and proactively building practical
-              solutions that create real value and help people.
-            </p>
           </div>
           <LinkCase link="/spinup" />
         </section>

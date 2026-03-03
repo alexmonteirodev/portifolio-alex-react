@@ -12,7 +12,7 @@ const MockupWebGroup = ({
     <div className="flex flex-row items-center justify-center gap-2">
       {img1 ? (
         <img
-          className="w-1/3 h-auto rounded-4xl border-2 border-[#B8AFE6]"
+          className="w-1/3 h-auto rounded-3xl md:rounded-4xl border-2 border-[#B8AFE6]"
           src={img1}
           alt={alt}
         />
@@ -21,7 +21,7 @@ const MockupWebGroup = ({
       )}
       {img2 ? (
         <img
-          className="w-1/3 h-auto rounded-4xl border-2 border-[#B8AFE6]"
+          className="w-1/3 h-auto rounded-3xl md:rounded-4xl border-2 border-[#B8AFE6]"
           src={img2}
           alt={alt}
         />
@@ -30,7 +30,7 @@ const MockupWebGroup = ({
       )}
       {img3 ? (
         <img
-          className="w-1/3 h-auto rounded-4xl border-2 border-[#B8AFE6]"
+          className="w-1/3 h-auto rounded-3xl md:rounded-4xl border-2 border-[#B8AFE6]"
           src={img3}
           alt={alt}
         />

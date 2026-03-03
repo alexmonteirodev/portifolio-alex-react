@@ -4,13 +4,16 @@ import spinup1 from "../assets/imgs/spinup/spinup1.png";
 import spinup2 from "../assets/imgs/spinup/spinup2.png";
 import spinup3 from "../assets/imgs/spinup/spinup3.png";
 import ImgCircle from "../components/imgCircle";
-import LinkCase from "../components/linkCase";
 import AppTitle from "../components/appTitle";
 import MockupGroup from "../components/MockupGroup";
 import evoscheduleold from "../assets/imgs/spinup/evoscheduleold.jpg";
 import evoschedulenew from "../assets/imgs/spinup/evoschedulenew.png";
 import MockupWebGroup from "../components/MockupWebGroup";
 import figmaMpv1 from "../assets/imgs/spinup/figmamvpspinup.png";
+import aproved1 from "../assets/imgs/spinup/aproved1.png";
+import aproved2 from "../assets/imgs/spinup/aproved2.png";
+import aproved3 from "../assets/imgs/spinup/aproved3.png";
+import LinkBackHome from "../components/LinkBackHome";
 
 export default function SpinUp() {
   return (
@@ -127,7 +130,7 @@ export default function SpinUp() {
 
             <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} /> */}
 
-            <h1 className="font-bold text-2xl md:text-3xl">Context</h1>
+            <h1 className="font-bold  text-2xl md:text-3xl">Context</h1>
             <p>
               While working at a company with rotating shifts (morning,
               afternoon, night), I noticed inefficiencies in how schedules were
@@ -144,7 +147,7 @@ export default function SpinUp() {
 
             <MockupWebGroup img1={evoscheduleold} img2={evoschedulenew} />
 
-            <h1 className="font-bold text-2xl md:text-3xl">Problem</h1>
+            <h1 className="font-bold  text-2xl md:text-3xl">Problem</h1>
             <p>
               The previous system, although visually simple, allowed employees
               to easily understand the schedule. The new app lacked:
@@ -165,7 +168,7 @@ export default function SpinUp() {
               <br />• Delayed approvals leading to lost opportunities
             </p>
 
-            <h1 className="font-bold text-2xl md:text-3xl">Insight</h1>
+            <h1 className="font-bold  text-2xl md:text-3xl">Insight</h1>
             <p>
               I identified an opportunity for a standardized scheduling tool
               that:
@@ -180,7 +183,7 @@ export default function SpinUp() {
               immediate operational value.
             </p>
 
-            <h1 className="font-bold text-2xl md:text-3xl">Strategy & MVP</h1>
+            <h1 className="font-bold  text-2xl md:text-3xl">Strategy & MVP</h1>
             <p>
               Building a fully integrated system required company backing, which
               was not feasible at the time. Instead, I focused on an MVP to
@@ -208,9 +211,13 @@ export default function SpinUp() {
               3. Provide tangible proof to leadership
             </p>
 
-            <img className=" rounded-xl " src={figmaMpv1} alt={"figmaImg"} />
+            <img
+              className="w-full h-auto rounded-xl max-w-4xl mx-auto"
+              src={figmaMpv1}
+              alt="Figma MVP mockup"
+            />
 
-            <h1 className="font-bold text-2xl md:text-3xl">
+            <h1 className="font-bold  text-2xl md:text-3xl">
               Technical Decisions
             </h1>
 
@@ -272,19 +279,24 @@ export default function SpinUp() {
             </ul>
             <p>The goal was validating operational value, not completeness.</p>
 
-            <h1 className="font-bold text-2xl md:text-3xl">
+            <h1 className="font-bold  text-2xl md:text-3xl">
               Validation & Stakeholder Feedback
             </h1>
             <p>
               The MVP was presented to my manager, who provided positive
               feedback. Although the project was not adopted due to internal
-              priorities, it successfully demonstrated concept viability and
-              potential operational improvements.
+              priorities, it was well received by employees, who validated its
+              usability and practical value.
             </p>
 
-            <img className=" rounded-xl " src={figmaMpv1} alt={"figmaImg"} />
+            <MockupWebGroup img1={aproved1} img2={aproved2} img3={aproved3} />
 
-            <h1 className="font-bold text-2xl md:text-3xl">
+            <p>
+              The initiative successfully demonstrated concept viability and
+              clear operational improvement potential.
+            </p>
+
+            <h1 className="font-bold  text-2xl md:text-3xl">
               If Evolved to Production
             </h1>
 
@@ -337,8 +349,24 @@ export default function SpinUp() {
               system-level operations.
             </p>
             <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} />
+            <p className="italic text-gray-500 mt-2">
+              SpinUp was a personal initiative project, and I genuinely have a
+              special appreciation for it. It represents more than just code..
+              it reflects my mindset of identifying inefficiencies,
+              understanding their impact, and proactively building practical
+              solutions that create real value and help people.
+            </p>
           </div>
-          {/* <h1 className="font-bold text-2xl md:text-3xl">VERSAO EM INGLES</h1>
+
+          <LinkBackHome link="/" />
+        </section>
+        <p className="text-gray-400 text-sm pb-5">Last updated: Mar 03, 2026</p>
+      </div>
+    </>
+  );
+}
+{
+  /* <h1 className="font-bold  text-2xl md:text-3xl">VERSAO EM INGLES</h1>
           <h1 className="font-bold text-2xl md:text-3xl">Context</h1>
           <p>
             I was working at a company operating with rotating shifts (morning,
@@ -679,12 +707,5 @@ export default function SpinUp() {
             enforcement at the backend level • Role-based permissions
           </p>
           <p>The MVP proved the usability layer.</p>
-          <p>The production version would formalize the system layer.</p> */}
-
-          <LinkCase link="/" />
-        </section>
-        <p className="text-gray-400 text-sm pb-5">Last updated: Mar 03, 2026</p>
-      </div>
-    </>
-  );
+          <p>The production version would formalize the system layer.</p> */
 }
