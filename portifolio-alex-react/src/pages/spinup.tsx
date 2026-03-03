@@ -351,7 +351,7 @@ export default function SpinUp() {
             <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} />
             <p className="italic text-gray-500 mt-2">
               SpinUp was a personal initiative project, and I genuinely have a
-              special appreciation for it. It represents more than just code..
+              special appreciation for it. It represents more than just code...
               it reflects my mindset of identifying inefficiencies,
               understanding their impact, and proactively building practical
               solutions that create real value and help people.
