@@ -94,7 +94,7 @@ const LinkCase = ({
             <LinkContent title={title} />
           </Link>
         ) : (
-          <a href={link} className={linkClass}>
+          <a href={link} className={linkClass} target="blank">
             <LinkContent title={title} />
           </a>
         )}

@@ -35,7 +35,261 @@ export default function SpinUp() {
             <ImgCircle img={alex} alt="Avatar" size="small" />
           </div>
           <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
-            {/* versao curta
+            <h1 className="font-bold text-2xl md:text-3xl">Context</h1>
+            <p>
+              While working at a company with rotating shifts (morning,
+              afternoon, night), I noticed inefficiencies in how schedules were
+              shared and managed. Employees could request shift swaps via
+              supervisor approval, but the process relied on screenshots and
+              manual communication.
+            </p>
+            <p>
+              Initially, schedules were displayed on a web page with a
+              color-coded monthly view. Later, the company introduced a new
+              internal app that removed the macro view and color cues, creating
+              confusion.
+            </p>
+
+            <MockupWebGroup img1={evoscheduleold} img2={evoschedulenew} />
+
+            <h1 className="font-bold pt-16  text-2xl md:text-3xl">Problem</h1>
+            <p>
+              The previous system, although visually simple, allowed employees
+              to easily understand the schedule.
+            </p>
+
+            <p>The new app lacked:</p>
+
+            <ul className="list-disc pl-6">
+              <li>Macro monthly view</li>
+              <li>Visual differentiation between shifts</li>
+              <li>Standardized representation</li>
+            </ul>
+            <p>
+              Over 1,000 employees resorted to third-party apps, leading to
+              fragmented schedules, inconsistent shift tracking, and inefficient
+              swap processes.
+            </p>
+
+            <p>Key pain points:</p>
+            <ul className="list-disc pl-6">
+              <li>Employees shared screenshots in WhatsApp groups</li>
+              <li>No standard visual reference</li>
+              <li>Manual swap validation (hours, shifts, training)</li>
+              <li>Delayed approvals leading to lost opportunities</li>
+            </ul>
+
+            <h1 className="font-bold pt-16  text-2xl md:text-3xl">Insight</h1>
+
+            <p>
+              I identified an opportunity for a standardized scheduling tool
+              that:
+            </p>
+            <ul className="list-disc pl-6">
+              <li>Preserved a macro monthly view</li>
+              <li>Used consistent color coding</li>
+              <li>
+                Calculated shift hours and total days worked automatically
+              </li>
+              <li>Matched compatible employees for swaps</li>
+              <li>Prepared pre-formatted requests for supervisors</li>
+            </ul>
+            <p>
+              This approach would reduce friction, save time, and deliver
+              immediate operational value.
+            </p>
+
+            <h1 className="font-bold pt-16  text-2xl md:text-3xl">
+              Strategy & MVP
+            </h1>
+            <p>
+              Building a fully integrated system required company backing, which
+              was not feasible at the time. Instead, I focused on an MVP to
+              validate the concept.
+            </p>
+            <ul className="list-disc pl-6">
+              <li>Clear macro monthly visualization</li>
+              <li>Standardized shift representation</li>
+              <li>Fast, intuitive editing interactions</li>
+            </ul>
+
+            <p className="font-semibold">Employee interaction model:</p>
+
+            <ul className="list-disc pl-6">
+              <li>Activate edit mode</li>
+              <li>Select shift type (Morning, Afternoon, Night)</li>
+              <li>Apply to calendar days</li>
+              <li>Exit edit mode to lock the schedule</li>
+            </ul>
+
+            <p className="font-semibold">Goals of the MVP:</p>
+
+            <ul className="list-decimal pl-6">
+              <li>Test adoption</li>
+
+              <li>Demonstrate operational value</li>
+
+              <li>Provide tangible proof to leadership</li>
+            </ul>
+
+            <img
+              className="w-full h-auto rounded-xl max-w-4xl mx-auto"
+              src={figmaMpv1}
+              alt="Figma MVP mockup"
+            />
+
+            <h1 className="font-bold pt-16  text-2xl md:text-3xl">
+              Technical Decisions
+            </h1>
+
+            <h2 className="font-semibold text-xl md:text-2xl">
+              Framework Choice
+            </h2>
+            <p>
+              I chose <strong>Next.js</strong> for:
+            </p>
+            <ul className="list-disc pl-6">
+              <li>Built-in dynamic routing for scalability</li>
+              <li>
+                Server components and API routes for future backend integration
+              </li>
+              <li>
+                Smoother path for authentication and role-based permissions
+              </li>
+            </ul>
+            <p>
+              Although it could be considered overengineering for an MVP, it
+              allowed the project to scale without structural changes.
+            </p>
+
+            <h2 className="font-semibold text-xl md:text-2xl">
+              Domain-Specific Logic
+            </h2>
+            <p>Shift rules were encoded directly in the app:</p>
+            <ul className="list-disc pl-6">
+              <li>Morning = 7 hours, Afternoon = 8 hours, Night = 9 hours</li>
+              <li>
+                Automatic calculation of total monthly hours and worked days
+              </li>
+            </ul>
+            <p>
+              This provided more context-specific value than generic third-party
+              calendars.
+            </p>
+
+            <h2 className="font-semibold text-xl md:text-2xl">
+              Persistence Strategy
+            </h2>
+            <p>
+              Data was stored locally to speed iteration and minimize
+              complexity. Trade-offs included:
+            </p>
+            <ul className="list-disc pl-6">
+              <li>No multi-user synchronization</li>
+              <li>No authentication</li>
+              <li>Data lost on device reset</li>
+              <li>No supervisor validation</li>
+            </ul>
+
+            <h2 className="font-semibold text-xl md:text-2xl">
+              Trade-offs & Awareness
+            </h2>
+            <p>Even with constraints, the MVP delivered:</p>
+            <ul className="list-disc pl-6">
+              <li>Standardized calendar visualization</li>
+              <li>Automated shift calculations</li>
+              <li>Clearer swap planning than third-party alternatives</li>
+            </ul>
+            <p>The goal was validating operational value, not completeness.</p>
+
+            <h1 className="font-bold pt-16  text-2xl md:text-3xl">
+              Validation & Stakeholder Feedback
+            </h1>
+            <p>
+              The MVP was presented to my manager, who provided positive
+              feedback. Although the project was not adopted due to internal
+              priorities, it was well received by employees, who validated its
+              usability and practical value.
+            </p>
+
+            <MockupWebGroup img1={aproved0} img2={aproved2} img3={aproved3} />
+
+            <p>
+              The initiative successfully demonstrated concept viability and
+              clear operational improvement potential.
+            </p>
+
+            <h1 className="font-bold pt-16  text-2xl md:text-3xl">
+              If Evolved to Production
+            </h1>
+
+            <h2 className="font-semibold text-xl md:text-2xl">
+              Backend & Database
+            </h2>
+            <p>
+              I would integrate <strong>Supabase</strong> to provide:
+            </p>
+            <ul className="list-disc pl-6">
+              <li>Authentication and user management</li>
+              <li>PostgreSQL database for persistent storage</li>
+              <li>Free-tier deployment for early-stage validation</li>
+            </ul>
+
+            <h2 className="font-semibold text-xl md:text-2xl">
+              Authentication & Identity
+            </h2>
+            <p>Supabase Auth would allow:</p>
+            <ul className="list-disc pl-6">
+              <li>Unique user identification</li>
+              <li>Shift ownership tracking</li>
+              <li>Permission control and future role-based access</li>
+            </ul>
+
+            <h2 className="font-semibold text-xl md:text-2xl">Approval Flow</h2>
+            <p>
+              Full supervisor approval automation would require company
+              integration. As an intermediate solution:
+            </p>
+            <ul className="list-disc pl-6">
+              <li>Pre-filled email snippets for swap requests</li>
+              <li>Automatic inclusion of shift details and validation</li>
+              <li>Future integration with email APIs for full automation</li>
+            </ul>
+
+            <h2 className="font-semibold text-xl md:text-2xl">
+              Architectural Evolution
+            </h2>
+            <p>A production version would add:</p>
+            <ul className="list-disc pl-6">
+              <li>Persistent database storage</li>
+              <li>Multi-user support</li>
+              <li>Real-time swap validation</li>
+              <li>Business rule enforcement at backend</li>
+              <li>Role-based permissions</li>
+            </ul>
+            <p>
+              The MVP validated usability; production would formalize
+              system-level operations.
+            </p>
+            <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} />
+            <p className="italic text-gray-500 mt-2">
+              SpinUp was a personal initiative project, and I genuinely have a
+              special appreciation for it. It represents more than just code...
+              it reflects my mindset of identifying inefficiencies,
+              understanding their impact, and proactively building practical
+              solutions that create real value and help people.
+            </p>
+          </div>
+
+          <LinkBackHome link="/" />
+        </section>
+        <p className="text-gray-400 text-sm pb-5">Last updated: Mar 03, 2026</p>
+      </div>
+    </>
+  );
+}
+{
+  /* versao curta
             <h1 className="font-bold text-3xl md:text-4xl mb-4">
               SpinUp – Employee Shift Scheduler
             </h1>
@@ -128,245 +382,12 @@ export default function SpinUp() {
               system-level operations and enable broader adoption.
             </p>
 
-            <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} /> */}
-
-            <h1 className="font-bold  text-2xl md:text-3xl">Context</h1>
-            <p>
-              While working at a company with rotating shifts (morning,
-              afternoon, night), I noticed inefficiencies in how schedules were
-              shared and managed. Employees could request shift swaps via
-              supervisor approval, but the process relied on screenshots and
-              manual communication.
-            </p>
-            <p>
-              Initially, schedules were displayed on a web page with a
-              color-coded monthly view. Later, the company introduced a new
-              internal app that removed the macro view and color cues, creating
-              confusion.
-            </p>
-
-            <MockupWebGroup img1={evoscheduleold} img2={evoschedulenew} />
-
-            <h1 className="font-bold  text-2xl md:text-3xl">Problem</h1>
-            <p>
-              The previous system, although visually simple, allowed employees
-              to easily understand the schedule. The new app lacked:
-              <br />• Macro monthly view
-              <br />• Visual differentiation between shifts
-              <br />• Standardized representation
-            </p>
-            <p>
-              Over 1,000 employees resorted to third-party apps, leading to
-              fragmented schedules, inconsistent shift tracking, and inefficient
-              swap processes.
-            </p>
-            <p>
-              Key pain points:
-              <br />• Employees shared screenshots in WhatsApp groups
-              <br />• No standard visual reference
-              <br />• Manual swap validation (hours, shifts, training)
-              <br />• Delayed approvals leading to lost opportunities
-            </p>
-
-            <h1 className="font-bold  text-2xl md:text-3xl">Insight</h1>
-            <p>
-              I identified an opportunity for a standardized scheduling tool
-              that:
-              <br />• Preserved a macro monthly view
-              <br />• Used consistent color coding
-              <br />• Calculated shift hours and total days worked automatically
-              <br />• Matched compatible employees for swaps
-              <br />• Prepared pre-formatted requests for supervisors
-            </p>
-            <p>
-              This approach would reduce friction, save time, and deliver
-              immediate operational value.
-            </p>
-
-            <h1 className="font-bold  text-2xl md:text-3xl">Strategy & MVP</h1>
-            <p>
-              Building a fully integrated system required company backing, which
-              was not feasible at the time. Instead, I focused on an MVP to
-              validate the concept.
-            </p>
-            <ul className="list-disc pl-6">
-              <li>Clear macro monthly visualization</li>
-              <li>Standardized shift representation</li>
-              <li>Fast, intuitive editing interactions</li>
-            </ul>
-            <p>
-              Employee interaction model:
-              <br />• Activate edit mode
-              <br />• Select shift type (Morning, Afternoon, Night)
-              <br />• Apply to calendar days
-              <br />• Exit edit mode to lock the schedule
-            </p>
-            <p>
-              Goals of the MVP:
-              <br />
-              1. Test adoption
-              <br />
-              2. Demonstrate operational value
-              <br />
-              3. Provide tangible proof to leadership
-            </p>
-
-            <img
-              className="w-full h-auto rounded-xl max-w-4xl mx-auto"
-              src={figmaMpv1}
-              alt="Figma MVP mockup"
-            />
-
-            <h1 className="font-bold  text-2xl md:text-3xl">
-              Technical Decisions
-            </h1>
-
-            <h2 className="font-bold text-xl md:text-2xl">Framework Choice</h2>
-            <p>
-              I chose <strong>Next.js</strong> for:
-            </p>
-            <ul className="list-disc pl-6">
-              <li>Built-in dynamic routing for scalability</li>
-              <li>
-                Server components and API routes for future backend integration
-              </li>
-              <li>
-                Smoother path for authentication and role-based permissions
-              </li>
-            </ul>
-            <p>
-              Although it could be considered overengineering for an MVP, it
-              allowed the project to scale without structural changes.
-            </p>
-
-            <h2 className="font-bold text-xl md:text-2xl">
-              Domain-Specific Logic
-            </h2>
-            <p>Shift rules were encoded directly in the app:</p>
-            <ul className="list-disc pl-6">
-              <li>Morning = 7 hours, Afternoon = 8 hours, Night = 9 hours</li>
-              <li>
-                Automatic calculation of total monthly hours and worked days
-              </li>
-            </ul>
-            <p>
-              This provided more context-specific value than generic third-party
-              calendars.
-            </p>
-
-            <h2 className="font-bold text-xl md:text-2xl">
-              Persistence Strategy
-            </h2>
-            <p>
-              Data was stored locally to speed iteration and minimize
-              complexity. Trade-offs included:
-            </p>
-            <ul className="list-disc pl-6">
-              <li>No multi-user synchronization</li>
-              <li>No authentication</li>
-              <li>Data lost on device reset</li>
-              <li>No supervisor validation</li>
-            </ul>
-
-            <h2 className="font-bold text-xl md:text-2xl">
-              Trade-offs & Awareness
-            </h2>
-            <p>Even with constraints, the MVP delivered:</p>
-            <ul className="list-disc pl-6">
-              <li>Standardized calendar visualization</li>
-              <li>Automated shift calculations</li>
-              <li>Clearer swap planning than third-party alternatives</li>
-            </ul>
-            <p>The goal was validating operational value, not completeness.</p>
-
-            <h1 className="font-bold  text-2xl md:text-3xl">
-              Validation & Stakeholder Feedback
-            </h1>
-            <p>
-              The MVP was presented to my manager, who provided positive
-              feedback. Although the project was not adopted due to internal
-              priorities, it was well received by employees, who validated its
-              usability and practical value.
-            </p>
-
-            <MockupWebGroup img1={aproved0} img2={aproved2} img3={aproved3} />
-
-            <p>
-              The initiative successfully demonstrated concept viability and
-              clear operational improvement potential.
-            </p>
-
-            <h1 className="font-bold  text-2xl md:text-3xl">
-              If Evolved to Production
-            </h1>
-
-            <h2 className="font-bold text-xl md:text-2xl">
-              Backend & Database
-            </h2>
-            <p>
-              I would integrate <strong>Supabase</strong> to provide:
-            </p>
-            <ul className="list-disc pl-6">
-              <li>Authentication and user management</li>
-              <li>PostgreSQL database for persistent storage</li>
-              <li>Free-tier deployment for early-stage validation</li>
-            </ul>
-
-            <h2 className="font-bold text-xl md:text-2xl">
-              Authentication & Identity
-            </h2>
-            <p>Supabase Auth would allow:</p>
-            <ul className="list-disc pl-6">
-              <li>Unique user identification</li>
-              <li>Shift ownership tracking</li>
-              <li>Permission control and future role-based access</li>
-            </ul>
-
-            <h2 className="font-bold text-xl md:text-2xl">Approval Flow</h2>
-            <p>
-              Full supervisor approval automation would require company
-              integration. As an intermediate solution:
-            </p>
-            <ul className="list-disc pl-6">
-              <li>Pre-filled email snippets for swap requests</li>
-              <li>Automatic inclusion of shift details and validation</li>
-              <li>Future integration with email APIs for full automation</li>
-            </ul>
-
-            <h2 className="font-bold text-xl md:text-2xl">
-              Architectural Evolution
-            </h2>
-            <p>A production version would add:</p>
-            <ul className="list-disc pl-6">
-              <li>Persistent database storage</li>
-              <li>Multi-user support</li>
-              <li>Real-time swap validation</li>
-              <li>Business rule enforcement at backend</li>
-              <li>Role-based permissions</li>
-            </ul>
-            <p>
-              The MVP validated usability; production would formalize
-              system-level operations.
-            </p>
-            <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} />
-            <p className="italic text-gray-500 mt-2">
-              SpinUp was a personal initiative project, and I genuinely have a
-              special appreciation for it. It represents more than just code...
-              it reflects my mindset of identifying inefficiencies,
-              understanding their impact, and proactively building practical
-              solutions that create real value and help people.
-            </p>
-          </div>
-
-          <LinkBackHome link="/" />
-        </section>
-        <p className="text-gray-400 text-sm pb-5">Last updated: Mar 03, 2026</p>
-      </div>
-    </>
-  );
+            <MockupGroup img1={spinup1} img2={spinup2} img3={spinup3} /> */
 }
+
 {
-  /* <h1 className="font-bold  text-2xl md:text-3xl">VERSAO EM INGLES</h1>
+  /*  versao longa
+  <h1 className="font-bold  text-2xl md:text-3xl">VERSAO EM INGLES</h1>
           <h1 className="font-bold text-2xl md:text-3xl">Context</h1>
           <p>
             I was working at a company operating with rotating shifts (morning,
