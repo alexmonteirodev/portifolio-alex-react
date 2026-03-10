@@ -295,8 +295,9 @@ export default function Home() {
             img={mimoIcon}
             alt="mimoIcon"
             name={"Mimo"}
-            link={"#"}
-            showLink={false}
+            link={
+              "https://apps.apple.com/es/app/mimo-birthdays-wishlists/id6755482120?l=en-GB"
+            }
           />
 
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
