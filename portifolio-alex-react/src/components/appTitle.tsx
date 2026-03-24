@@ -30,7 +30,7 @@ const AppTitle = ({
             target="blank"
             href={link}
           >
-            <p>Check out</p>
+            <p>Check it out</p>
             <img
               className="rounded-xl h-5 w-5 border border-gray-300 opacity-60 transition-transform duration-300 group-hover:rotate-45 text-gray-400 group-hover:opacity-100"
               src={arrowIcon}
