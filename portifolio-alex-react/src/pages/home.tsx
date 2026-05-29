@@ -15,6 +15,10 @@ import supabaseIcon from "../assets/svg/stacks/supabase.svg";
 import gitIcon from "../assets/svg/stacks/git.svg";
 import expoIcon from "../assets/svg/stacks/expo.svg";
 import viteIcon from "../assets/svg/stacks/vitejs.svg";
+import zustand from "../assets/svg/stacks/zustand.svg";
+import tanstack from "../assets/svg/stacks/tanstack.svg";
+import claude from "../assets/svg/stacks/claude.svg";
+import figma from "../assets/svg/stacks/figma.svg";
 import wppIcon from "../assets/svg/send-plane-fill.svg";
 import mimo1 from "../assets/imgs/mimo/mimo1.png";
 import mimo2 from "../assets/imgs/mimo/mimo2.png";
@@ -28,6 +32,11 @@ import lumio3 from "../assets/imgs/lumio/lumio3.png";
 import lumio4 from "../assets/imgs/lumio/lumio4.png";
 import lumio5 from "../assets/imgs/lumio/lumio5.png";
 import lumio6 from "../assets/imgs/lumio/lumio6.png";
+import movamob1 from "../assets/imgs/mova/mova-mob-1.png";
+import movamob2 from "../assets/imgs/mova/mova-mob-2.png";
+import movamob3 from "../assets/imgs/mova/mova-mob-3.png";
+import movaweb1 from "../assets/imgs/mova/macbook-mova-1.png";
+import movaweb2 from "../assets/imgs/mova/macbook-mova-2.png";
 import spinup1 from "../assets/imgs/spinup/spinup1.png";
 import spinup2 from "../assets/imgs/spinup/spinup2.png";
 import spinup3 from "../assets/imgs/spinup/spinup3.png";
@@ -60,8 +69,8 @@ const stacks = [
     title: "React",
   },
   {
-    img: reactIcon,
-    title: "React Native",
+    img: viteIcon,
+    title: "Vite",
   },
   {
     img: nextIcon,
@@ -72,28 +81,42 @@ const stacks = [
     title: "Tailwind",
   },
   {
-    img: tailwindIcon,
-    title: "Nativewind",
-  },
-  {
-    img: supabaseIcon,
-    title: "Supabase",
-  },
-
-  {
-    img: gitIcon,
-    title: "Git",
+    img: reactIcon,
+    title: "React Native",
   },
   {
     img: expoIcon,
     title: "Expo",
   },
   {
-    img: viteIcon,
-    title: "Vite",
+    img: tailwindIcon,
+    title: "Nativewind",
+  },
+  {
+    img: zustand,
+    title: "Zustand",
+  },
+  {
+    img: tanstack,
+    title: "Tanstack",
+  },
+  {
+    img: supabaseIcon,
+    title: "Supabase",
+  },
+  {
+    img: gitIcon,
+    title: "Git",
+  },
+  {
+    img: claude,
+    title: "Claude",
+  },
+  {
+    img: figma,
+    title: "Figma",
   },
   // duplicado
-
   {
     img: htmlIcon,
     title: "Html",
@@ -115,8 +138,8 @@ const stacks = [
     title: "React",
   },
   {
-    img: reactIcon,
-    title: "React Native",
+    img: viteIcon,
+    title: "Vite",
   },
   {
     img: nextIcon,
@@ -127,25 +150,40 @@ const stacks = [
     title: "Tailwind",
   },
   {
-    img: tailwindIcon,
-    title: "Nativewind",
-  },
-  {
-    img: supabaseIcon,
-    title: "Supabase",
-  },
-
-  {
-    img: gitIcon,
-    title: "Git",
+    img: reactIcon,
+    title: "React Native",
   },
   {
     img: expoIcon,
     title: "Expo",
   },
   {
-    img: viteIcon,
-    title: "Vite",
+    img: tailwindIcon,
+    title: "Nativewind",
+  },
+  {
+    img: zustand,
+    title: "Zustand",
+  },
+  {
+    img: tanstack,
+    title: "Tanstack",
+  },
+  {
+    img: supabaseIcon,
+    title: "Supabase",
+  },
+  {
+    img: gitIcon,
+    title: "Git",
+  },
+  {
+    img: claude,
+    title: "Claude",
+  },
+  {
+    img: figma,
+    title: "Figma",
   },
 ];
 
@@ -175,7 +213,7 @@ export default function Home() {
               to production.
             </p>
             <p>
-              I contribute across the full product lifecycle — from early-stage
+              I contribute across the full product lifecycle from early-stage
               ideation and product validation to defining technical
               architecture, designing data models, and implementing
               well-structured features.
@@ -256,10 +294,29 @@ export default function Home() {
 
           <div className="flex flex-col gap-4 font-sans text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
-              We’re building something designed to reshape how people manage
-              performance, structure routines, and connect within the fitness
-              ecosystem. <br /> Mova is coming...
+              A B2B/B2C SaaS platform developed to transform personal trainer
+              management through a complete and integrated fitness ecosystem.
             </p>
+            <p>
+              The software offers a professional web panel with an intelligent
+              dashboard, student management, workout creation, exercise library,
+              and a notification system for the personal trainer.
+            </p>
+            <div className="flex flex-col items-center justify-center gap-2">
+              <img className="w-1/1 h-auto" src={movaweb2} alt={"teste"} />
+              {/* <img className="w-1/1 h-auto" src={movaweb1} alt={"teste"} /> */}
+            </div>
+            <p>
+              For students, the platform features a connected mobile app that
+              provides workout tracking, progress monitoring, and a personalized
+              experience.
+            </p>
+            <MockupGroup img1={movamob1} img2={movamob2} img3={movamob3} />
+            <p>
+              The goal is to centralize all operations and communications into a
+              single modern, scalable, performance‑oriented solution.
+            </p>
+
             {/* <p>
               The app includes birthday reminders to prevent missed dates and a
               post system where users can share gift ideas they would like to
@@ -431,7 +488,7 @@ export default function Home() {
           </div>
           <LinkCase link="/spinup" route={true} />
         </section>
-        <p className="text-gray-400 text-sm pb-5">Last updated: Feb 13, 2026</p>
+        <p className="text-gray-300 text-sm pb-5">Last updated: May 29, 2026</p>
       </div>
     </>
   );
