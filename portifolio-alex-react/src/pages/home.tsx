@@ -35,7 +35,6 @@ import lumio6 from "../assets/imgs/lumio/lumio6.png";
 import movamob1 from "../assets/imgs/mova/mova-mob-1.png";
 import movamob2 from "../assets/imgs/mova/mova-mob-2.png";
 import movamob3 from "../assets/imgs/mova/mova-mob-3.png";
-// import movaweb1 from "../assets/imgs/mova/macbook-mova-1.png";
 import movaweb2 from "../assets/imgs/mova/macbook-mova-2.png";
 import spinup1 from "../assets/imgs/spinup/spinup1.png";
 import spinup2 from "../assets/imgs/spinup/spinup2.png";
@@ -218,11 +217,6 @@ export default function Home() {
               architecture, designing data models, and implementing
               well-structured features.
             </p>
-            {/* <p>
-              With a strong interest in software architecture and system design,
-              I focus on creating scalable, maintainable systems that balance
-              product vision with technical excellence.
-            </p> */}
           </div>
           <a
             href="mailto:alexmonteiro.dev@gmail.com"
@@ -314,29 +308,9 @@ export default function Home() {
             <MockupGroup img1={movamob1} img2={movamob2} img3={movamob3} />
             <p>
               The goal is to centralize all operations and communications into a
-              single modern, scalable, performance‑oriented solution.
+              single modern, scalable, performance oriented solution.
             </p>
 
-            {/* <p>
-              The app includes birthday reminders to prevent missed dates and a
-              post system where users can share gift ideas they would like to
-              receive, similar to a social feed.
-            </p>
-            <img
-              className="rounded-xl"
-              src={mimoFirstPageApple}
-              alt={"mimoImgs"}
-            />
-            <p>
-              Mimo blends social interaction with practical utility, improving
-              the gift-giving experience through personalization and
-              organization.
-            </p>
-            <img
-              className="rounded-xl"
-              src={mimoSecondPageApple}
-              alt={"mimoImgs"}
-            /> */}
             <LinkCase
               title={"Follow us on instagram"}
               link={
