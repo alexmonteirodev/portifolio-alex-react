@@ -202,7 +202,9 @@ export default function Home() {
               <h1 className="font-bold text-2xl md:text-3xl">
                 Hey, I'm Alex. 🌱
               </h1>
-              <p className="text-gray-400 text-sm pt-1 pl-0.5">Madrid, Spain</p>
+              <p className="text-gray-400 text-sm pt-1 pl-0.5 font-light">
+                Madrid, Spain
+              </p>
             </div>
           </div>
           <div className="flex flex-col gap-4 font-sans text-lg md:text-2xl leading-8 md:leading-10 text-gray-800 font-light  not-italic">
@@ -228,7 +230,7 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col gap-4 w-full">
-          <p className="text-gray-400 text-sm">Tools & Stacks</p>
+          <p className="text-gray-400 text-sm font-light">Tools & Stacks</p>
           <div className="relative overflow-hidden w-full py-2 bg-gray-100/60">
             {/* Fade esquerdo */}
             <div className="absolute left-0 top-0 bottom-0 w-16 bg-linear-to-r from-white to-transparent z-10 pointer-events-none"></div>
@@ -277,6 +279,7 @@ export default function Home() {
               "https://www.instagram.com/movaclub.br?igsh=MWkzNTN3YnRra2xvdA=="
             }
             showLink={false}
+            buttonText={"Go to Apple Store"}
           />
 
           <div className="flex flex-row gap-2">
@@ -329,6 +332,7 @@ export default function Home() {
             link={
               "https://apps.apple.com/es/app/mimo-birthdays-wishlists/id6755482120?l=en-GB"
             }
+            buttonText={"Go to Apple Store"}
           />
 
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
@@ -377,6 +381,7 @@ export default function Home() {
             link={
               "https://apps.apple.com/us/app/lumio-bible-devotionals/id6755790168"
             }
+            buttonText={"Go to Apple Store"}
           />
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
 
@@ -424,6 +429,8 @@ export default function Home() {
             alt="lumioIcon"
             name={"SpinUp"}
             link={"https://gp-schedule.vercel.app"}
+            buttonText={"Go to Web App"}
+            IsWeb={true}
           />
           <p className="text-gray-400 text-xs font-mono">2023 - 2024</p>
 
@@ -462,7 +469,9 @@ export default function Home() {
           </div>
           <LinkCase link="/spinup" route={true} />
         </section>
-        <p className="text-gray-300 text-sm pb-5">Last updated: May 29, 2026</p>
+        <p className="text-gray-300 text-sm pb-5 font-light">
+          Last updated: May 29, 2026
+        </p>
       </div>
     </>
   );
