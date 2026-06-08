@@ -1,4 +1,4 @@
-import spinupIcon from "../assets/svg/app-dev-icon.svg";
+import spinupIcon from "../assets/svg/spinup-logo.png";
 import alex from "../assets/imgs/landers/alex.png";
 import spinup1 from "../assets/imgs/spinup/spinup1.png";
 import spinup2 from "../assets/imgs/spinup/spinup2.png";
@@ -25,7 +25,8 @@ export default function SpinUp() {
             alt="lumioIcon"
             name={"SpinUp"}
             link={"https://gp-schedule.vercel.app"}
-            buttonText={"Go to Web App"}
+            buttonText={"Web App"}
+            IsWeb={true}
           />
           <div className="flex flex-row gap-3 items-center">
             <p className="text-gray-400 text-xs font-mono">2023 - 2024</p>

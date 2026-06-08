@@ -1,7 +1,7 @@
 import mimoIcon from "../assets/svg/mimo-icon.svg";
 import lumioIcon from "../assets/svg/lumio-icon.svg";
 import movaIcon from "../assets/svg/mova-icon.svg";
-import spinupIcon from "../assets/svg/app-dev-icon.svg";
+import spinupIcon from "../assets/svg/spinup-logo.png";
 import alex from "../assets/imgs/landers/alex.png";
 import avatar from "../assets/imgs/perfilImgCv.jpg";
 import htmlIcon from "../assets/svg/stacks/html5.svg";
@@ -189,7 +189,7 @@ const stacks = [
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 max-w-6xl mx-auto bg-white pt-[env(safe-area-inset-top)]">
+      <div className="flex flex-col items-center gap-20 px-6 md:px-16 lg:px-32 xl:px-64 max-w-6xl mx-auto bg-white ">
         {/* section 1 - apresentation */}
         <section className="flex flex-col gap-4 h-[88vh] pt-10 justify-center">
           <div className="flex flex-row gap-3 items-center ">
@@ -279,7 +279,7 @@ export default function Home() {
               "https://www.instagram.com/movaclub.br?igsh=MWkzNTN3YnRra2xvdA=="
             }
             showLink={false}
-            buttonText={"Go to Apple Store"}
+            buttonText={"Get"}
           />
 
           <div className="flex flex-row gap-2">
@@ -332,7 +332,7 @@ export default function Home() {
             link={
               "https://apps.apple.com/es/app/mimo-birthdays-wishlists/id6755482120?l=en-GB"
             }
-            buttonText={"Go to Apple Store"}
+            buttonText={"Get"}
           />
 
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
@@ -381,7 +381,7 @@ export default function Home() {
             link={
               "https://apps.apple.com/us/app/lumio-bible-devotionals/id6755790168"
             }
-            buttonText={"Go to Apple Store"}
+            buttonText={"Get"}
           />
           <p className="text-gray-400 text-xs font-mono">2024 - 2025</p>
 
@@ -429,7 +429,7 @@ export default function Home() {
             alt="lumioIcon"
             name={"SpinUp"}
             link={"https://gp-schedule.vercel.app"}
-            buttonText={"Go to Web App"}
+            buttonText={"Web App"}
             IsWeb={true}
           />
           <p className="text-gray-400 text-xs font-mono">2023 - 2024</p>
