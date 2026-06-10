@@ -8,6 +8,7 @@ import htmlIcon from "../assets/svg/stacks/html5.svg";
 import cssIcon from "../assets/svg/stacks/css3.svg";
 import jsIcon from "../assets/svg/stacks/javascript.svg";
 import tsIcon from "../assets/svg/stacks/typescript.svg";
+import playwright from "../assets/svg/stacks/playwright.svg";
 import reactIcon from "../assets/svg/stacks/react.svg";
 import nextIcon from "../assets/svg/stacks/nextjs.svg";
 import tailwindIcon from "../assets/svg/stacks/tailwindcss.svg";
@@ -100,6 +101,10 @@ const stacks = [
     title: "Tanstack",
   },
   {
+    img: playwright,
+    title: "  Playwright",
+  },
+  {
     img: supabaseIcon,
     title: "Supabase",
   },
@@ -167,6 +172,10 @@ const stacks = [
   {
     img: tanstack,
     title: "Tanstack",
+  },
+  {
+    img: playwright,
+    title: "  Playwright",
   },
   {
     img: supabaseIcon,
