@@ -130,10 +130,6 @@ const stacks = [
     img: figma,
     title: "Figma",
   },
-  {
-    img: figma,
-    title: "Figma",
-  },
   // duplicado
   {
     img: htmlIcon,
