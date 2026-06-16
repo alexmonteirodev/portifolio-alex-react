@@ -20,6 +20,8 @@ import zustand from "../assets/svg/stacks/zustand.svg";
 import tanstack from "../assets/svg/stacks/tanstack.svg";
 import claude from "../assets/svg/stacks/claude.svg";
 import figma from "../assets/svg/stacks/figma.svg";
+import resend from "../assets/svg/stacks/resend.svg";
+import stripe from "../assets/svg/stacks/stripe.svg";
 import wppIcon from "../assets/svg/send-plane-fill.svg";
 import mimo1 from "../assets/imgs/mimo/mimo1.png";
 import mimo2 from "../assets/imgs/mimo/mimo2.png";
@@ -117,6 +119,18 @@ const stacks = [
     title: "Claude",
   },
   {
+    img: resend,
+    title: "Resend SMTP",
+  },
+  {
+    img: stripe,
+    title: "Stripe",
+  },
+  {
+    img: figma,
+    title: "Figma",
+  },
+  {
     img: figma,
     title: "Figma",
   },
@@ -188,6 +202,14 @@ const stacks = [
   {
     img: claude,
     title: "Claude",
+  },
+  {
+    img: resend,
+    title: "Resend SMTP",
+  },
+  {
+    img: stripe,
+    title: "Stripe",
   },
   {
     img: figma,
