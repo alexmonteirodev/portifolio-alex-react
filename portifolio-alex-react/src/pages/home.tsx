@@ -22,6 +22,8 @@ import claude from "../assets/svg/stacks/claude.svg";
 import figma from "../assets/svg/stacks/figma.svg";
 import resend from "../assets/svg/stacks/resend.svg";
 import stripe from "../assets/svg/stacks/stripe.svg";
+import maestro from "../assets/svg/stacks/maestro.svg";
+import jest from "../assets/svg/stacks/jest.svg";
 import wppIcon from "../assets/svg/send-plane-fill.svg";
 import mimo1 from "../assets/imgs/mimo/mimo1.png";
 import mimo2 from "../assets/imgs/mimo/mimo2.png";
@@ -82,6 +84,7 @@ const stacks = [
     img: tailwindIcon,
     title: "Tailwind",
   },
+
   {
     img: reactIcon,
     title: "React Native",
@@ -104,7 +107,15 @@ const stacks = [
   },
   {
     img: playwright,
-    title: "  Playwright",
+    title: "Playwright",
+  },
+  {
+    img: maestro,
+    title: "Maestro",
+  },
+  {
+    img: jest,
+    title: "Jest",
   },
   {
     img: supabaseIcon,
@@ -185,7 +196,15 @@ const stacks = [
   },
   {
     img: playwright,
-    title: "  Playwright",
+    title: "Playwright",
+  },
+  {
+    img: maestro,
+    title: "Maestro",
+  },
+  {
+    img: jest,
+    title: "Jest",
   },
   {
     img: supabaseIcon,
