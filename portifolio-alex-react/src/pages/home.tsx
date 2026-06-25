@@ -3,7 +3,7 @@ import lumioIcon from "../assets/svg/lumio-icon.svg";
 import movaIcon from "../assets/svg/mova-icon.svg";
 import spinupIcon from "../assets/svg/spinup-logo.png";
 import alex from "../assets/imgs/landers/alex.png";
-import avatar from "../assets/imgs/perfilImgCv.jpg";
+import avatar from "../assets/imgs/perfilImgCv.jpeg";
 import htmlIcon from "../assets/svg/stacks/html5.svg";
 import cssIcon from "../assets/svg/stacks/css3.svg";
 import jsIcon from "../assets/svg/stacks/javascript.svg";
