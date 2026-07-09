@@ -322,9 +322,8 @@ export default function Home() {
             alt="movaIcon"
             name={"Mova"}
             link={
-              "https://www.instagram.com/movaclub.br?igsh=MWkzNTN3YnRra2xvdA=="
+              "https://apps.apple.com/es/app/mova-treino-e-evolu%C3%A7%C3%A3o/id6775570877?l=en-GB"
             }
-            showLink={false}
             buttonText={"Get"}
           />
 
