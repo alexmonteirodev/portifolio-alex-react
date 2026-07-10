@@ -359,12 +359,7 @@ export default function Home() {
               single modern, scalable, performance oriented solution.
             </p>
 
-            <LinkCase
-              title={"Follow us on instagram"}
-              link={
-                "https://www.instagram.com/movaclub.br?igsh=MWkzNTN3YnRra2xvdA=="
-              }
-            />
+            <LinkCase title={"Go to mova web"} link={"https://movaclub.app/"} />
           </div>
         </section>
 
