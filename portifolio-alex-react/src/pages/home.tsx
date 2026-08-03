@@ -255,15 +255,14 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-4 font-sans text-lg md:text-2xl leading-8 md:leading-10 text-gray-800 font-light  not-italic">
             <p>
-              I’m a Mobile Developer with a strong focus on software
-              architecture and system design, building applications from concept
-              to production.
+              I'm a Fullstack Developer with a strong focus on React and React
+              Native, building applications from concept to production across
+              web and mobile.
             </p>
             <p>
               I contribute across the full product lifecycle from early-stage
-              ideation and product validation to defining technical
-              architecture, designing data models, and implementing
-              well-structured features.
+              ideation and architecture to designing data models and shipping
+              well-structured, production-ready features.
             </p>
           </div>
           <a
