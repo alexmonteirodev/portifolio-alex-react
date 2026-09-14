@@ -47,7 +47,6 @@ import spinup3 from "../assets/imgs/spinup/spinup3.png";
 import ImgCircle from "../components/imgCircle";
 import Stack from "../components/stack";
 import LinkCase from "../components/linkCase";
-import GooPill from "../components/GooPill";
 import GooMerge from "../components/GooMerge";
 import Landers from "../components/Landers";
 import AppTitle from "../components/appTitle";
