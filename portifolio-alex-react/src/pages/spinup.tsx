@@ -36,7 +36,7 @@ export default function SpinUp() {
           <div className="flex flex-row gap-2">
             <ImgCircle img={alex} alt="Avatar" size="small" />
           </div>
-          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-normal text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <h1 className="font-bold text-2xl md:text-3xl">Context</h1>
             <p>
               While working at a company with rotating shifts (morning,

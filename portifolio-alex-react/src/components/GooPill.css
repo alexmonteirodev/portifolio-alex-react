@@ -1,0 +1,82 @@
+/* GooPill: a ball at rest; on hover a label pill liquid-morphs out of it. */
+
+.goo-pill {
+  /*
+   * Hover latch: while closed the anchor is inert, so only the ball (which
+   * re-enables pointer events on itself) can start the hover. Once the anchor
+   * is hovered it becomes fully interactive, so the cursor can cross the gap
+   * and sit on the label without dropping the state. Leaving the box resets.
+   */
+  pointer-events: none;
+}
+
+.goo-pill:hover {
+  pointer-events: auto;
+}
+
+/* The only element that can start the hover while the anchor is inert */
+.goo-pill .goo-ball {
+  pointer-events: auto;
+}
+
+/* Blurred layer is only needed while the cap is travelling: once fully open it
+   fades out so the filter stops bridging the 8px gap between ball and label. */
+.goo-pill .goo-layer {
+  opacity: 1;
+  transition: opacity 0s;
+}
+
+.goo-pill:hover .goo-layer,
+.goo-pill:focus-visible .goo-layer {
+  opacity: 0;
+  transition: opacity 0.2s ease 0.4s;
+}
+
+.goo-pill .goo-layer__ball {
+  left: 0;
+}
+
+/* Stretches to the label's right edge so it matches any label width */
+.goo-pill .goo-layer__cap {
+  left: 52px;
+  right: 0;
+  transform-origin: -30px center;
+  transform: scaleX(0);
+  transition: transform 0.55s var(--goo-ease);
+}
+
+.goo-pill:hover .goo-layer__cap,
+.goo-pill:focus-visible .goo-layer__cap {
+  transform: scaleX(1);
+}
+
+.goo-pill:hover .goo-ball img,
+.goo-pill:focus-visible .goo-ball img {
+  transform: translate(2px, -2px);
+}
+
+/* Inherits pointer-events from the anchor: inert while closed, live once open */
+.goo-pill .goo-label {
+  margin-left: 8px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition:
+    opacity 0.3s ease 0.06s,
+    transform 0.55s var(--goo-ease) 0.04s;
+}
+
+.goo-pill:hover .goo-label,
+.goo-pill:focus-visible .goo-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goo-pill .goo-layer__cap {
+    transition: transform 0.2s ease;
+  }
+  .goo-pill .goo-label {
+    transition: opacity 0.2s ease;
+    transform: none;
+  }
+}

@@ -88,7 +88,7 @@ const LinkCase = ({
         />
       )}
       <div>
-        <p className="text-gray-400 text-sm font-light">
+        <p className="text-gray-400 text-sm font-normal">
           {text ?? "Find out more"}
         </p>
         {route ? (

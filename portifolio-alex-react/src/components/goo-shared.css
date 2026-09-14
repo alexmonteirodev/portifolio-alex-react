@@ -1,0 +1,79 @@
+/* Shared building blocks for the goo buttons (GooPill, GooMerge).
+   Motion/state rules live in each component's own stylesheet. */
+
+.goo-pill,
+.goo-merge {
+  --goo-ease: cubic-bezier(0.34, 1.3, 0.5, 1);
+  --goo-bg: #111;
+  --goo-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.07),
+    0 1px 2px rgba(0, 0, 0, 0.05);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  height: 44px;
+  text-decoration: none;
+}
+
+/* Blurred layer that receives the SVG goo filter (set inline in the TSX) */
+.goo-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.goo-layer__ball,
+.goo-layer__cap {
+  position: absolute;
+  bottom: 0;
+  height: 44px;
+  border-radius: 100px;
+  background: var(--goo-bg);
+}
+
+.goo-layer__ball {
+  width: 44px;
+}
+
+/* Sharp shapes on top of the blurred layer */
+.goo-ball {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100px;
+  background: var(--goo-bg);
+  box-shadow: var(--goo-shadow);
+  cursor: pointer;
+}
+
+.goo-ball img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.goo-label {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 100px;
+  background: var(--goo-bg);
+  box-shadow: var(--goo-shadow);
+  color: #fff;
+  font-size: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goo-ball img {
+    transform: none !important;
+  }
+}

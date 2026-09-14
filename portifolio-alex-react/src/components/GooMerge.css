@@ -1,0 +1,82 @@
+/* GooMerge: label + ball visible at rest; on hover the ball slides into the
+   label and the goo layer fuses them into one pill. */
+
+/* How far the ball travels: the 8px gap plus overlap into the label. Keep the
+   icon clear of the text: at -24px it stops 16px short of the label's padding. */
+.goo-merge {
+  --goo-travel: -28px;
+}
+
+/* Blurred layer is hidden at rest (otherwise the filter would bridge the gap).
+   Shown instantly on hover; on the way out it fades quickly so the bridge
+   doesn't stretch and snap as the ball pulls away. */
+.goo-merge .goo-layer {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.goo-merge:hover .goo-layer,
+.goo-merge:focus-visible .goo-layer {
+  opacity: 1;
+  transition: opacity 0s;
+}
+
+/* Blurred copy of the label: everything left of the 8px gap + 44px ball */
+.goo-merge .goo-layer__cap {
+  left: 0;
+  right: 52px;
+}
+
+/* Elastic overshoot only on the way in; the return is a plain ease-out so the
+   ball settles without bouncing against the label. */
+.goo-merge .goo-layer__ball,
+.goo-merge .goo-ball {
+  transform: translateX(0);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.goo-merge .goo-layer__ball {
+  right: 0;
+}
+
+.goo-merge .goo-ball {
+  margin-left: 8px;
+}
+
+.goo-merge:hover .goo-layer__ball,
+.goo-merge:hover .goo-ball,
+.goo-merge:focus-visible .goo-layer__ball,
+.goo-merge:focus-visible .goo-ball {
+  transform: translateX(var(--goo-travel));
+  transition: transform 0.55s var(--goo-ease);
+}
+
+/* Once merged the ball is the pill's only rounded end: the label's right end
+   squares off underneath it so the two arcs don't meet in a concave "waist".
+   Delayed on the way in (so it squares as the ball arrives), immediate on the
+   way out. */
+.goo-merge .goo-label,
+.goo-merge .goo-layer__cap {
+  transition: border-radius 0.25s ease;
+}
+
+.goo-merge:hover .goo-label,
+.goo-merge:hover .goo-layer__cap,
+.goo-merge:focus-visible .goo-label,
+.goo-merge:focus-visible .goo-layer__cap {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: border-radius 0.25s ease 0.15s;
+}
+
+.goo-merge:hover .goo-ball img,
+.goo-merge:focus-visible .goo-ball img {
+  transform: translate(0px, 0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goo-merge .goo-layer__ball,
+  .goo-merge .goo-ball {
+    transition: transform 0.2s ease;
+  }
+}

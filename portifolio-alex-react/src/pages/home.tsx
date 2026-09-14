@@ -47,6 +47,8 @@ import spinup3 from "../assets/imgs/spinup/spinup3.png";
 import ImgCircle from "../components/imgCircle";
 import Stack from "../components/stack";
 import LinkCase from "../components/linkCase";
+import GooPill from "../components/GooPill";
+import GooMerge from "../components/GooMerge";
 import Landers from "../components/Landers";
 import AppTitle from "../components/appTitle";
 import MockupGroup from "../components/MockupGroup";
@@ -248,12 +250,12 @@ export default function Home() {
               <h1 className="font-bold text-2xl md:text-3xl">
                 Hey, I'm Alex. 🌱
               </h1>
-              <p className="text-gray-400 text-sm pt-1 pl-0.5 font-light">
+              <p className="text-gray-400 text-sm pt-1 pl-0.5 font-normal">
                 Madrid, Spain
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-4 font-sans text-lg md:text-2xl leading-8 md:leading-10 text-gray-800 font-light  not-italic">
+          <div className="flex flex-col gap-4 font-sans text-lg md:text-2xl leading-8 md:leading-10 text-gray-800 font-normal not-italic pb-3.5">
             <p>
               I'm a Fullstack Developer with a strong focus on React and React
               Native, building applications from concept to production across
@@ -265,17 +267,20 @@ export default function Home() {
               well-structured, production-ready features.
             </p>
           </div>
-          <a
+          <GooMerge
             href="mailto:alexmonteiro.dev@gmail.com"
-            className="mt-4 text-xl text-white bg-black px-6 py-3 rounded-xl flex items-center justify-center self-start cursor-pointer hover:scale-105 hover:opacity-80 transition gap-3"
-          >
-            <img className="h-6 w-6 " src={wppIcon} alt={""} />
-            Say Hello!
-          </a>
+            label="Say Hello!"
+            icon={wppIcon}
+          />
+          {/* <GooPill
+            href="mailto:alexmonteiro.dev@gmail.com"
+            label="Say Hello!"
+            icon={wppIcon}
+          /> */}
         </section>
 
         <section className="flex flex-col gap-4 w-full">
-          <p className="text-gray-400 text-sm font-light">Tools & Stacks</p>
+          <p className="text-gray-400 text-sm font-normal">Tools & Stacks</p>
           <div className="relative overflow-hidden w-full py-2 bg-gray-100/60">
             {/* Fade esquerdo */}
             <div className="absolute left-0 top-0 bottom-0 w-16 bg-linear-to-r from-white to-transparent z-10 pointer-events-none"></div>
@@ -333,7 +338,7 @@ export default function Home() {
 
           <Landers />
 
-          <div className="flex flex-col gap-4 font-sans text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans text-gray-800 font-normal text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
               A B2B/B2C SaaS platform developed to transform personal trainer
               management through a complete and integrated fitness ecosystem.
@@ -378,7 +383,7 @@ export default function Home() {
 
           <Landers />
 
-          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-normal text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
               Mimo is a social app focused on birthdays and gift planning. Users
               create personal profiles including preferences such as clothing
@@ -426,7 +431,7 @@ export default function Home() {
 
           <Landers />
 
-          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-normal text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
               Lumio is a daily devotional app designed to help users connect
               with God through their emotions. By selecting their current mood,
@@ -477,7 +482,7 @@ export default function Home() {
             <ImgCircle img={alex} alt="Avatar" size="small" />
           </div>
 
-          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-light text-lg md:text-2xl leading-8 md:leading-10 not-italic">
+          <div className="flex flex-col gap-4 font-sans  text-gray-800 font-normal text-lg md:text-2xl leading-8 md:leading-10 not-italic">
             <p>
               I've worked on a company who operates with rotating shifts, and I
               noticed that the internal system didn’t provide a clear overview
@@ -508,7 +513,7 @@ export default function Home() {
           </div>
           <LinkCase link="/spinup" route={true} />
         </section>
-        <p className="text-gray-300 text-sm pb-5 font-light">
+        <p className="text-gray-300 text-sm pb-5 font-normal">
           Last updated: May 29, 2026
         </p>
       </div>
